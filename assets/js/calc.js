@@ -177,22 +177,15 @@ function getExtra5Price() {
     return extra5Price;
 }
 
-function calres(){
-	responsivePrice1=1000;
-	responsivePrice2=0;
-		if ($('input#addResponsive').prop('checked', true)) {
-			
-		grandTotal = grandTotal + responsivePrice1;
-	}
-		else  {
-			
-		grandTotal = grandTotal + responsivePrice2;
-	}
-}
-
 function calculateTotal() {
 	var grandTotal = baseCost + getwebsitePagePrices() + getCustomDesignPrices() + getECPrices() + getSEO1Price() + getSEO2Price() + getSEO3Price() + getExtra1Price() + getExtra2Price() + getExtra3Price() + getExtra4Price() + getExtra5Price();
-	calres();
+	var responsivePrice2 = 0;
+	if ($('input#addResponsive').prop('checked', true)) {
+	grandTotal = grandTotal + responsivePrice;
+	}
+	else  {
+	grandTotal = grandTotal + responsivePrice2;
+	}
 
     var divobj = document.getElementById('total');
     divobj.style.display = 'block';
