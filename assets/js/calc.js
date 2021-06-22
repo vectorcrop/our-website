@@ -386,7 +386,7 @@ function getExtra5Price() {
 
 function calculateTotal() {
 	var grandTotal = baseCost + getwebsitePagePrices() + getCustomDesignPrices() + getECPrices() + getSEO1Price() + getSEO2Price() + getSEO3Price() + getExtra1Price() + getExtra2Price() + getExtra3Price() + getExtra4Price() + getExtra5Price();
-	if ($('#addResponsive').is(':checked')) {
+	if ($('#addResponsive:checked')) {
 		grandTotal = grandTotal + responsivePrice;
 	}
     var divobj = document.getElementById('total');
