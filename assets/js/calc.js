@@ -177,23 +177,6 @@ function getExtra5Price() {
     return extra5Price;
 }
 
-function getResponsivePrice() {
-	
-   var el = document.getElementById("addResponsive");
-   if (el.firstChild.data == "+ Add") 
-   {
-       el.firstChild.data = "Remove";
-	   responsiveClicked = true;
-	   calculateTotal();
-   }
-   else 
-   {
-     el.firstChild.data = "+ Add";
-	 responsiveClicked = false;
-	 calculateTotal();
-   }
-}
-
 function calculateTotal() {
 	var grandTotal = baseCost + getwebsitePagePrices() + getCustomDesignPrices() + getECPrices() + getSEO1Price() + getSEO2Price() + getSEO3Price() + getExtra1Price() + getExtra2Price() + getExtra3Price() + getExtra4Price() + getExtra5Price();
 	if (responsiveClicked) {
