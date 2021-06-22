@@ -182,7 +182,7 @@ function calculateTotal() {
 	if ($('input#addResponsive').prop('checked', true)) {
 		grandTotal = grandTotal + responsivePrice;
 	}
-		else {
+		else if ($('input#addResponsive').prop('checked', false)) {
 		grandTotal = grandTotal - responsivePrice;
 	}
     var divobj = document.getElementById('total');
