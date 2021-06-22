@@ -177,10 +177,15 @@ function getExtra5Price() {
     return extra5Price;
 }
 
+function addres{
+	if ($('input#addResponsive:checked')) {
+		calculateTotal();
+	}
+}
 
 function calculateTotal() {
 	var grandTotal = baseCost + getwebsitePagePrices() + getCustomDesignPrices() + getECPrices() + getSEO1Price() + getSEO2Price() + getSEO3Price() + getExtra1Price() + getExtra2Price() + getExtra3Price() + getExtra4Price() + getExtra5Price();
-	if ($('#addResponsive:checked')) {
+	if ($('input#addResponsive:checked')) {
 		grandTotal = grandTotal + responsivePrice;
 	}
     var divobj = document.getElementById('total');
