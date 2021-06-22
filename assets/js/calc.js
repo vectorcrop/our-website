@@ -1,6 +1,5 @@
  var pageConstant = 3000;
  var baseCost = 4000; 
- var responsivePrice = 1000; 
  var websitePagePrices = new Array();
  websitePagePrices[0]=1*pageConstant;
  websitePagePrices["pageOption1"]=1*pageConstant;
@@ -179,13 +178,7 @@ function getExtra5Price() {
 
 function calculateTotal() {
 	var grandTotal = baseCost + getwebsitePagePrices() + getCustomDesignPrices() + getECPrices() + getSEO1Price() + getSEO2Price() + getSEO3Price() + getExtra1Price() + getExtra2Price() + getExtra3Price() + getExtra4Price() + getExtra5Price();
-	var responsivePrice2 = 0;
-	if ($('input#addResponsive').prop('checked', false)) {
-	grandTotal = grandTotal + responsivePrice2;
-	}
-	else {
-	grandTotal = grandTotal + responsivePrice;
-	}
+	//grandTotal = grandTotal + responsivePrice2;
 
     var divobj = document.getElementById('total');
     divobj.style.display = 'block';
