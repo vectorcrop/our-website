@@ -183,9 +183,7 @@ function calculateTotal() {
 		grandTotal = grandTotal + responsivePrice;
 	}
 		else {
-			var resp = 0;
-			responsivePrice == resp;
-		grandTotal = grandTotal + responsivePrice;
+		grandTotal = grandTotal - responsivePrice;
 	}
     var divobj = document.getElementById('total');
     divobj.style.display = 'block';
