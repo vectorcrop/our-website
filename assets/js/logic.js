@@ -6,7 +6,7 @@ function update(){
 
 function initGameState(callback){
   GAME_STATE.grid = {};
-  loadImagePixels("data/map.png", function(rows){
+  loadImagePixels("assets/data/map.png", function(rows){
     rows.forEach(function(row, i){
       row.forEach(function(pixel, j){
         var cell = new Cell(i,j);
