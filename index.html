@@ -38,6 +38,135 @@
     color: #fff;
     text-decoration: none;
     }
+    .main {
+  height: 100%;
+  /* max-height: 600px; */
+  background-color: hsla(200,40%,30%,.4);
+  background-image:   
+    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  
+  background-position: 
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size: 
+    2500px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 50s para infinite linear;
+  }
+
+@keyframes para {
+  100% {
+    background-position: 
+      -4000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+    }
+  }
+
+  .containers {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+}
+.plan {
+  background-color: #fefefe14;
+  box-shadow: 0 0 8px var(--color);
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  backdrop-filter: blur(100px);
+}
+.plan h3 {
+  color: var(--color);
+}
+.plan ul {
+  list-style-type: none;
+  margin: 15px 0;
+}
+.plan ul li {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 12px;
+  border-bottom: solid 1px #77777744;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.fa {
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+}
+.fa-check {
+  background-color: rgb(0, 182, 0);
+}
+.fa-check ~ span {
+  color: #000;
+}
+.fa-times {
+  background-color: rgb(182, 0, 0);
+}
+.price {
+  color: #0b75f9;
+  font-weight: bolder;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+button.active,
+button:active {
+  background-color: var(--color);
+  color: #fff;
+}
+button.active:hover {
+  background-color: #4292f5;
+}
+
+.plan.selected,
+.plan:hover {
+  background-color: #f5f5fa;
+  z-index: 200;
+}
+.plan:hover {
+  z-index: 0;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+ul li:hover {
+  transform: translateX(15px);
+  -webkit-transform: translateX(15px);
+  -moz-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  -o-transform: translateX(15px);
+}
+
   </style>
   <body class="boxed-layout">
     <div class="wrapper">
@@ -81,7 +210,7 @@
                         <a class="btn-action btn-outline nav-link js-scroll-trigger"href="#" data-toggle="modal" data-target="#contact">Hire Us</a>
                         <a class="btn-action js-scroll-trigger" href="#pricing">Order Now</a>
                       </div>
-                      <p class="condition_txt">We will deliver you marketing and technology solutions to achieve your company's goals in the best way.</p>
+                      <p class="condition_txt">We will deliver you marketing and technology solutions in the best way.</p>
                         <br>
                  
                         
@@ -114,6 +243,9 @@
                 <div class="cat2">
                   <h4>What's inside</h4>
                   <h2>Connect your ideas and innovations with us.</h2>
+                  <p>
+                    Built by us, managed by you.
+                    </p>
                 </div>
               </div>
               <div class="cat-flex">
@@ -128,7 +260,7 @@
                     </div>
                     <div class="cat-text">
                       <h3>Web/App Development and Designing</h3>
-                      <p>Deliver the best stories and ideas on the topics you care about most straight to you.</p>
+                      <p>We’ll create a website App to attract visitors, convert them into customers and encourage them to come back</p>
                     </div>
                   </div>
                 </div>
@@ -143,7 +275,7 @@
                     </div>
                     <div class="cat-text">
                       <h3>Social Media Advertisement</h3>
-                      <p>Deliver the best stories and ideas on the topics you care about most straight to you.</p>
+                      <p>We'll help you create a breakthrough product or highly improve your services.</p>
                     </div>
                   </div>
                 </div>
@@ -156,7 +288,7 @@
                     </div>
                     <div class="cat-text">
                       <h3>Product/Contents Designing.</h3>
-                      <p>Deliver the best stories and ideas on the topics you care about most straight to you.</p>
+                      <p>We'll deliver To get advantages from content marketing you need to reaching an audience.</p>
                     </div>
                   </div>
                 </div>
@@ -476,12 +608,11 @@
             </div>
           </div>
         </div> -->
-        
-        
-        <!----- Pricing-------------->
-             <div class="card" id="pricing">
+
+        <!-- cal price-->
+             <div class="card" id="pricing" style="background: none !important;">
           <div class="row">
-              <div class="col-md-8 cart">
+              <div class="col-md-8 cart" style="backdrop-filter: blur(50px);">
                   
                       <div class="row">
                           <div class="col">
@@ -595,7 +726,7 @@
                  <br>
                  
               </div>
-              <div class="col-md-4 summary">
+              <div class="col-md-4 summary"  style="backdrop-filter: blur(10px);">
                   <div>
                       <h5><b>Summary</b></h5>
                       
@@ -613,16 +744,117 @@
                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"  class="btn btn-dark btn-block">Book Now</a>
               </div>
           </div>
-      </div><br><br>
+      </div>
+      <br><br>
 
+      <div class="containers">
+        <div class="plan">
+          <img src="https://i.postimg.cc/ncHLd8m9/paper-plane.png" alt="">
+          <h3>PERSONAL</h3>
+          <ul>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>WEB DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>WEB DEVELOPMENT</span>
+            </li>
+            <li>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>UI/UX DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>GRIPHIC DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>SEO EXPERT</span>
+            </li>
+            <li>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>TEAM WORK</span>
+            </li>
+          </ul>
+          <p class="price">₹ 7,000</p>
+          <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform">Book</a>
+        </div>
+        <div class="plan">
+          <img src="https://i.postimg.cc/9XYHJXg8/plane.png" alt="">
+          <h3>SMALL TEAM</h3>
+          <ul>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>WEB DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>WEB DEVELOPMENT</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>UI/UX DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>GRIPHIC DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>SEO EXPERT</span>
+            </li>
+            <li>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>TEAM WORK</span>
+            </li>
+          </ul>
+          <p class="price">₹ 10,000</p>
+          <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform">Book</a>
+        </div>
+        <div class="plan">
+          <img src="https://i.postimg.cc/BvHPrJVs/space-ship.png" alt="">
+          <h3>ENTERPRISE</h3>
+          <ul>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>WEB DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>WEB DEVELOPMENT</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>UI/UX DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>GRIPHIC DESIGNER</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>SEO EXPERT</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>TEAM WORK</span>
+            </li>
+          </ul>
+          <p class="price">₹ 14,000</p>
+          <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform">Book</a>
+        </div>
+      </div>
+<br>
 
 
 
         <!-- Footer -->
-        <div class="footer" id="contacts">
+        <div class="pt-5">
+        <div class="footer card" id="contacts">
           <div class="container">
             <div class="row text-center">
-              <div class="col-lg-2 col-md-3 col-sm-12">
+              <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="footer-logo">
                   <h2>VECTORCROP.</h2>
                 </div>
@@ -635,7 +867,7 @@
                   <li><a href="#" data-toggle="modal" data-target="#contact">Contact</a> </li>
                 </ul>
               </div>
-              <div class="col-lg-4 col-md-3 col-sm-12">
+              <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="footer-links">
                   <ul>
                     <li><a href="https://www.instagram.com/vector.crop/"> <img class="img-fluid" src="assets/icons/i1.png" alt="Icon"> </a> </li>
@@ -666,6 +898,7 @@
           <!-- Scroll To Top Ends-->
           </div>
         </div>
+      </div>
       </div> <!-- Main -->
     </div><!-- Wrapper -->
 
@@ -768,8 +1001,10 @@
         document.body.classList.toggle("dark-theme");
         if( document.body.classList.contains("dark-theme")){
           icon.src = "assets/images/1sun.png";
+          main.style.backgroundColor = "hsl(0deg 0% 7%)";
         } else {
           icon.src = "assets/images/1moon.png";
+          main.style.backgroundColor = "hsla(200,40%,30%,.4)";
         }
       }
     </script>
