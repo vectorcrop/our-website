@@ -288,6 +288,9 @@ body {
   text-transform: capitalize;
   color: #333347;
 	display: flex;
+	background: white;
+	border-radius: 20px;
+    padding: 1.5px;
 }
 
 .navbar-nav .nav-item .nav-link {
