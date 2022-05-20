@@ -1,1030 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-    <meta charset="utf-8">
-    <title>VectorCrop | Web Development Agency</title>
-    <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
+    <title>VectorCrop - Software Development Agency.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Get Websites in Cheap Rate ✓E-Commerce @ ₹13,999/- only ✓Wordpress @ ₹7,999/- only">
-    <meta name="keywords" content="VectorCrop, Vector, Crop, vectorcrop.com, Cheap website india, E-Commerce @ cheap rate">
-    <meta http-equiv=”X-XSS-Protection” content="1">
-    <link rel="icon" type="image/x-icon" href="/assets/icons/logo.ico">
-    <meta http-equiv=”Content-Security-Policy” content=”upgrade-insecure-requests”>
-    <meta http-equiv=”Strict-Transport-Security” content=”max-age=31536000”>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900%7COpen+Sans:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
-    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-version.css">
+    <link rel="stylesheet" href="assets/css/smm.css">
 
-    <script async src="https://cdn.splitbee.io/sb.js"></script>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
-
-    <link href="https://opensource.propeller.in/components/icons/css/google-icons.css" rel="stylesheet" >
-    <link href="https://opensource.propeller.in/components/button/css/button.css" rel="stylesheet" >
-
-
-
-  </head>
-  <style>
-  a {
-    color: #fff;
-    text-decoration: none;
-    }
-    .main {
-  height: 100%;
-  /* max-height: 600px; */
-  background-color: hsla(200,40%,30%,.4);
-  background-image:   
-    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-  
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    2500px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 50s para infinite linear;
-  }
-
-@keyframes para {
-  100% {
-    background-position: 
-      -4000px 20%,
-      -800px 95%,
-      500px 50%,
-      1000px 100%,
-      400px 0;
-    }
-  }
-
-  .containers {
-  width: 90%;
-  max-width: 1000px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2%;
-  align-items: center;
-  justify-content: center;
-}
-.plan {
-  background-color: #fefefe14;
-  box-shadow: 0 0 8px var(--color);
-  padding: 50px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
-}
-.plan h3 {
-  color: var(--color);
-  background: #f0f8ff42;
-    border-radius: 50px;
-    padding: 15px;
-    font-weight: bold;
-}
-.plan ul {
-  list-style-type: none;
-  margin: 15px 0;
-  background: #f0f8ff42;
-    border-radius: 50px;
-    padding: 15px;
-}
-.plan ul li {
-  font-size: 0.8em;
-  font-weight: bold;
-  color: #777;
-  margin-bottom: 12px;
-  border-bottom: solid 1px #77777744;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-}
-.fa {
-  color: white;
-  border-radius: 50%;
-  padding: 2px;
-  margin-right: 5px;
-  width: 22px;
-  height: 22px;
-  text-align: center;
-}
-.fa-check {
-  background-color: rgb(0, 182, 0);
-}
-.fa-check ~ span {
-  color: #000;
-}
-.fa-times {
-  background-color: rgb(182, 0, 0);
-}
-.price {
-  color: #0b75f9;
-  font-weight: bolder;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-button.active,
-button:active {
-  background-color: var(--color);
-  color: #fff;
-}
-button.active:hover {
-  background-color: #4292f5;
-}
-
-.plan.selected,
-.plan:hover {
-  background-color: #f5f5fa;
-  z-index: 200;
-}
-.plan:hover {
-  z-index: 0;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-ul li:hover {
-  transform: translateX(15px);
-  -webkit-transform: translateX(15px);
-  -moz-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  -o-transform: translateX(15px);
-}
-
-  </style>
-  <body class="boxed-layout">
-    <div class="wrapper">
-      <!-- Navbar Section -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top wt-border" style="backdrop-filter: blur(10px);background: none !important;border: none !important; ">
-        <div class="container">
-          <div class="navbar-brand">
-            <img src="assets/images/logo.png" alt="vectorcrop logo" style="width: 100px; height:auto">
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto navbar-right" style="background: none !important;">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#main">Home</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>
-              <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviews">Reviews</a></li>    
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#faqs">FAQ</a></li> -->
-              <li><a class="btn-nav js-scroll-trigger" href="#" data-toggle="modal" data-target="#contact">Contact us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav><!-- Navbar End -->
-
-
-      <div id="main" class="main">
-        <div class="home">
-          <div class="container">
-            <div class="hero-content wow fadeIn">
-              <div class="flex-split">
-                <div class="container">
-                  <div class="flex-inner flex-inverted align-center">
-                    <div class="f-image f-image-inverted">
-                      <img class="img-fluid" src="assets/images/vector1.png" alt="Feature">
-                    </div>
-                    <div class="f-text">
-                      <div class="left-content">
-                        <h4>inspire the next</h4>
-                        <h2>Meet your future goals with VectorCrop.</h2>
-                        <a class="btn-action btn-outline nav-link js-scroll-trigger"href="#" data-toggle="modal" data-target="#contact">Hire Us</a>
-                        <a class="btn-action js-scroll-trigger" href="#pricing">Order Now</a>
-                      </div>
-                      <p class="condition_txt">We will deliver you marketing and technology solutions in the best way.</p>
-                        <br>
-                 
-                        
-                         
-                             <a href="https://www.instagram.com/vector.crop/"><img class="img-fluid" src="assets/icons/instagram.png"  alt="vectorcrop instagram" width="35px" height="35px"></a> 
-                             <a href="https://github.com/vectorcrop"> <img class="img-fluid ml-3" src="assets/icons/github.png"  alt="vectorcrop github" width="35px" height="35px"> </a> 
-                             <a href="https://www.youtube.com/channel/UCsBAJimRq5wQDG3hjg7vHyw"> <img class="img-fluid  ml-3" src="assets/icons/youtube.png"  alt="vectorcrop youtube" width="40px" height="35px"> </a> 
-
-                             <!-- <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/whatsapp.png" width="35px" height="auto"> </a>  -->
-<!--                              <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/twitter.png"  width="35px" height="auto"> </a>  -->
-                             <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/facebook.png"  alt="vectorcrop facebook" width="35px" height="35px"> </a> 
-
-                             <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/linkedin.png"  alt="vectorcrop linkedin" width="35px" height="35px"> </a> 
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- Hero End -->
-        
-
-
-        <!--- About Section -->
-        <div class="yd-cat" id="features">
-          <div class="container">
-            <div class="cat-inner">
-              <div class="cat-flex">
-                <div class="cat2">
-                  <h4>What's inside</h4>
-                  <h2>Connect your ideas and innovations with us.</h2>
-                  <p>
-                    Built by us, managed by you.
-                    </p>
-                </div>
-              </div>
-              <div class="cat-flex">
-               
-                <div class="cat1">
-                  <div class="cat-item clr1">
-                    <div class="cat-icon">
-                      <div class="cat-img">
-                        <img src="assets/icons/cat3.png" width="80" alt="Feature">
-                      
-                      </div>
-                    </div>
-                    <div class="cat-text">
-                      <h3>Web/App Development and Designing</h3>
-                      <p>We’ll create a website App to attract visitors, convert them into customers and encourage them to come back</p>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="cat1">
-                  <div class="cat-item clr2">
-                    <div class="cat-icon">
-                      <div class="cat-img">
-                        <img src="assets/icons/cat1.png" width="80" alt="Feature">
-                     
-                      </div>
-                    </div>
-                    <div class="cat-text">
-                      <h3>Social Media Advertisement</h3>
-                      <p>We'll help you create a breakthrough product or highly improve your services.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="cat1">
-                  <div class="cat-item clr3">
-                    <div class="cat-icon">
-                      <div class="cat-img">
-                        <img src="assets/icons/cat2.png" width="80" alt="Feature">
-                      </div>
-                    </div>
-                    <div class="cat-text">
-                      <h3>Product/Contents Designing.</h3>
-                      <p>We'll deliver To get advantages from content marketing you need to reaching an audience.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Features Section -->
-        <!-- <div  class="ft-flex">
-          <div class="container">
-            <div class="ft-inner align-center">
-              <div class="ft-image wow">
-                <img class="img-fluid" src="assets/images/support.png" alt="Feature">
-              </div>
-              <div class="ft-text">
-                <div class="ft-content">
-                  <h2>Data Sharing.</h2>
-                  <p> When you get staright to the point the presentation looks attractive on your web pages.</p>
-                  <ul>
-                    <li><img src="assets/icons/tick.svg" alt="Tick"> Realtime broadcasts </li>
-                    <li><img src="assets/icons/tick.svg" alt="Tick"> Upload and sit tight </li>
-                    <li><img src="assets/icons/tick.svg" alt="Tick"> View realtime stats</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="ft-inner ft-inverted align-center">
-              <div class="ft-image f-image-inverted">
-                <img class="img-fluid" src="assets/images/write.png" alt="Feature">
-              </div>
-              <div class="ft-text">
-                <div class="ft-content">
-                  <h2>High Definition</h2>
-                  <p> When you get staright to the point the presentation looks attractive on your web pages.</p>
-                  <ul>
-                    <li><img src="assets/icons/tick.svg" alt="Tick"> Realtime broadcast </li>
-                    <li><img src="assets/icons/tick.svg" alt="Tick"> View realtime stats </li>
-                    <li><img src="assets/icons/tick.svg" alt="Tick"> Upload and sit tight </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-        <!-- Counter Section -->
-        <!-- <div class="yd-stats">
-          <div class="container-s">
-            <div class="row text-center">
-             <div class="col-sm-12">
-                <div class="intro">
-                  <h4>OUR RESULTS</h4>
-                  <h2>Our awesome results worth displaying</h2>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="assets/icons/f1.png" alt="Icon">
-                  </div>
-                   <h3><span class="counter">47</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Mobile Users</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="assets/icons/f2.png" alt="Icon">
-                  </div>
-                   <h3><span class="counter">33</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Daily Views</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="assets/icons/f3.png" alt="Icon">
-                  </div>
-                   <h3><span class="counter">28</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Monthly Returns</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="counter-up">
-                  <div class="counter-icon">
-                    <img src="assets/icons/f4.png" alt="Icon">
-                  </div>
-                  <h3><span class="counter">349</span>%</h3>
-                  <div class="counter-text">
-                    <h2>Annual Growth</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- Counter Section Ends -->
-
-
-        <!-- YD Flex Grid Section -->
-        <!-- <div id="reviews" class="yd_reviews">
-          <div class="container">
-            <div class="yd_rev_inner">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="rev-intro">
-                    <h2>Stories from our customers</h2>
-                    <p> When you get staright to the point the presentation looks attractive.</p>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="rev-list owl-carousel owl-theme">
-                    <div class="rev-block">
-                      <img src="assets/icons/quote.svg" width="60" alt="Quote">
-                      <h2>Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. We use Connect for key for easy and seamless weekly communication with our clients and .</h2>
-                      <div class="rev-client">
-                        <div class="rev-icon">
-                          <div class="rev-img">
-                            <img class="rounded-circle" src="assets/icons/rev.png" width="60" alt="Feature">
-                          </div>
-                        </div>
-                        <div class="rev-text">
-                          <h3>Marty McFly</h3>
-                          <p>Head of OP, <a href="#">Future LLC</a></p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="rev-block">
-                      <img src="assets/icons/quote.svg" width="60" alt="Quote">
-                      <h2> Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. We use Connect for key for easy and seamless weekly communication with our clients.</h2>
-                      <div class="rev-client">
-                        <div class="rev-icon">
-                          <div class="rev-img">
-                            <img class="rounded-circle" src="assets/icons/rev2.png" width="60" alt="Feature">
-                          </div>
-                        </div>
-                        <div class="rev-text">
-                          <h3>Dr. Strange</h3>
-                          <p>CTO, <a href="#">Arma Systems</a></p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="rev-block">
-                      <img src="assets/icons/quote.svg" width="60" alt="Quote">
-                      <h2>We use Connect for key for easy and seamless weekly communication with our clients. Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</h2>
-                      <div class="rev-client">
-                        <div class="rev-icon">
-                          <div class="rev-img">
-                            <img class="rounded-circle" src="assets/icons/rev3.png" width="60" alt="Feature">
-                          </div>
-                        </div>
-                        <div class="rev-text">
-                          <h3>John Kennedy</h3>
-                          <p>Manager Sales, <a href="#">Optima Corp</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-
-        <!-- Pricing Tables -->
-        <!-- <div id="pricing" class="pricing-section text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
-                <div class="pricing-intro">
-                  <h1>Simple & Affordable Pricing.</h1>
-                  <p>
-                    Our plans are designed to meet the requirements of both beginners <br class="hidden-xs"> and players.
-                    Get the right plan that suits you.
-                  </p>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="table-left">
-                      <h2>Basic Free</h2>
-                      <p>Limited features</p>
-                      <img class="img-fluid" src="assets/icons/f1.png" width="120" alt="Icon">
-                      <div class="pricing-details">
-                       <span>Free</span>
-                       <div class="sub_span">One year</div>
-                      </div>
-                      <a class="btn-action">Download</a>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="table-right">
-                      <h2>Premium</h2>
-                      <p>Unlimited Lifetime</p>
-                      <img class="img-fluid" src="assets/icons/f3.png" width="120" alt="Icon">
-                      <div class="pricing-details">
-                       <span>$99.99</span>
-                       <div class="sub_span sub_span_alt">Lifetime</div>
-                      </div>
-                      <a class="btn-action btn-outline">Subscribe</a>
-                    </div>
-                  </div>
-                </div>
-                <p class="refund-txt">* Refund requests can be accepted with in 10 days of the purchase.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
- -->
-
-        <!-- Faq Section -->
-        <!-- <div id="faqs" class="yd_faqs">
-          <div class="container">
-            <div class="faq_inner">
-              <div class="col-md-10 offset-md-1">
-                <div class="faq_intro">
-                  <h2>Frequently Asked Queries</h2>
-                  <p>Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
-                  <h5>Still have questions?</h5> <a class="link-btm" href="#">Contact us</a>
-                </div>
-                <div id="accordion">
-                  <div class="row">
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                          <a class="card-title">What is Connect?</a>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                              synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
-                          <a class="card-title">How much does template cost?</a>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                              synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
-                          <a class="card-title">How can updates be downloaded?</a>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                              synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 custompadding">
-                      <div class="card mb-0">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
-                          <a class="card-title">Some other Support related queries.</a>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                          <div class="card-body">
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- Faq Section End -->
-
-
-
-        <!-- <div id="cta" class="yd_cta_box">
-          <div class="container">
-            <div class="cta_box">
-              <div class="cta_box_inner">
-                <div class="col-sm-12 col-md-12">
-                  <h4>start your trial</h4>
-                  <h2>Connect is made just for you. Ready to build your next project?</h2>
-                  <div class="form">
-                    <form id="chimp-form" class="subscribe-form" action="http://ydirection.com/Connect/assets/php/subscribe.php" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-                      <input class="mail" id="chimp-email" type="email" name="email" placeholder="Enter email address" autocomplete="off"><input class="submit-button" type="submit" value="Sign Up">
-                    </form>
-                   <div id="response"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- cal price-->
-             <div class="card" id="pricing" style="background: none !important;">
-          <div class="row">
-              <div class="col-md-8 cart" style="backdrop-filter: blur(50px);">
-                  
-                      <div class="row">
-                          <div class="col">
-                              <h5>PRICE YOUR WEB DESIGN</h5>
-                              <hr>
-                          </div>
-                      </div>
-              
-                  <div class="container">
-                    <form id="calForm">
-                      <div class="row g-2">
-                        <div class="col-md">
-                          <div class="form-floating">
-                            <input type="text" class="form-control"  id="websitePageOptions" name="websitePageOptions" value="1" onchange="calculateTotal()" >
-                            <label for="websitePageOptions"><h1>Number of pages</h1></label>
-                          </div>
-                        </div>
-                        <div class="col-md">
-                          <div class="form-floating">
-                            <select class="form-select" id="customDesign" name="customDesign" onchange="calculateTotal()" aria-label="Floating label select example">
-                              <option value="customDesign1" selected>Custom Design</option>
-                              <option value="customDesign2">Templates</option>
-                            </select>
-                            <label for="customDesign">Select your design</label>
-                          </div>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="row g-2">
-                      <!--div class="form-check form-switch  mb-2">
-                        <input class="form-check-input" type="checkbox"  id="addResponsive" value="responsivePrice" role="button" aria-disabled="false" onclick="calculateTotal()">
-                        <h4 class="form-check-label" for="addResponsive">Responsive Design</h4>
-                      </div-->
-                      <h4>Content Writing</h4>
-                      <div class="form-check  mb-0">
-                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="question1" value="cowrite1" onclick="calculateTotal()">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Yes
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="flexRadioDefault2" type="radio"  name="question1" value="cowrite2" onclick="calculateTotal()">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          No
-                        </label>
-                      </div></div>
-                      <br>
-                      <h3>Which of these features will your site require?</h3>
-                      
-                      <div class="row g-2 mt-2">
-                        <div class="col-md">
-                        <div class="form-check ">
-                          <input class="form-check-input" id="seo" type="checkbox"  name="seo1" onclick="calculateTotal()">
-                          <label class="form-check-label" for="seo">
-                            Search Engine Optimisation (SEO)
-                          </label>
-                        </div>
-                        <div class="form-check mt-1">
-                          <input class="form-check-input" type="checkbox" name="seo2" onclick="calculateTotal()">
-                          <label class="form-check-label">
-                            Social Media Optimisation (SMO)
-                          </label>
-                        </div>
-                        <div class="form-check  mt-1">
-                          <input class="form-check-input" type="checkbox"  name="seo3" onclick="calculateTotal()">
-                          <label class="form-check-label">
-                            Server/Webhost Setup
-                          </label>
-                        </div>
-                        <div class="form-check  mt-1">
-                          <input class="form-check-input" type="checkbox" name="extra4" onclick="calculateTotal()" value="Google Analytics">
-                          <label class="form-check-label">
-                            Offsite Backup Integration
-                          </label>
-                        </div>
-                        </div>
-
-                        <div class="col-md">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox"  name="extra1" onclick="calculateTotal()" value="Social Media Integration">
-                          <label class="form-check-label" for="flexCheckChecked">
-                            Security Setup
-                          </label>
-                        </div>
-                        <div class="form-check  mt-1">
-                          <input class="form-check-input" type="checkbox"  name="extra2" onclick="calculateTotal()" value="Forums">
-                          <label class="form-check-label">
-                            Contact Forums
-                          </label>
-                        </div>
-                        <div class="form-check  mt-1">
-                          <input class="form-check-input" type="checkbox"name="extra3" onclick="calculateTotal()" value="Live Chat">
-                          <label class="form-check-label">
-                            Live Chat
-                          </label>
-                        </div>
-                        <div class="form-check  mt-1">
-                          <input class="form-check-input" type="checkbox"name="extra5" onclick="calculateTotal()" value="Banner Slideshow">
-                          <label class="form-check-label">
-                            Banner Slideshow
-                          </label>
-                        </div>
-                      
-                      </div></div>
-                     
-
-
-
-                  </form>
-                </div>
-                 <br>
-                 
-              </div>
-              <div class="col-md-4 summary"  style="backdrop-filter: blur(10px);">
-                  <div>
-                      <h5><b>Summary</b></h5>
-                      
-                  </div>
-                  <hr>
-                  <div class="row">
-                      <div class="col" style="padding-left:0;">Estimated :<br> Price</div>
-                      <div class="col text-right"  id="total">₹4500 to ₹9000 excl. GST</div>
-                  </div>
-                  <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-             
-                  </div>
-                  <h4>Ready to get going? </h4><br>
-               
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"  class="btn btn-dark btn-block">Book Now</a>
-              </div>
-          </div>
-      </div>
-      <br><br>
-
-      <div class="containers">
-        <div class="plan">
-          <img src="https://i.postimg.cc/ncHLd8m9/paper-plane.png" alt="">
-          <h3>PERSONAL</h3>
-          <ul>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>WEB DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>WEB DEVELOPMENT</span>
-            </li>
-            <li>
-              <i class="fa fa-times" aria-hidden="true"></i>
-              <span>UI/UX DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-times" aria-hidden="true"></i>
-              <span>GRIPHIC DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-times" aria-hidden="true"></i>
-              <span>SEO EXPERT</span>
-            </li>
-            <li>
-              <i class="fa fa-times" aria-hidden="true"></i>
-              <span>TEAM WORK</span>
-            </li>
-          </ul>
-          <p class="price">₹ 7,000</p>
-          <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform">Book</a>
-        </div>
-        <div class="plan">
-          <img src="https://i.postimg.cc/9XYHJXg8/plane.png" alt="">
-          <h3>SMALL TEAM</h3>
-          <ul>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>WEB DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>WEB DEVELOPMENT</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>UI/UX DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>GRIPHIC DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-times" aria-hidden="true"></i>
-              <span>SEO EXPERT</span>
-            </li>
-            <li>
-              <i class="fa fa-times" aria-hidden="true"></i>
-              <span>TEAM WORK</span>
-            </li>
-          </ul>
-          <p class="price">₹ 10,000</p>
-          <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform">Book</a>
-        </div>
-        <div class="plan">
-          <img src="https://i.postimg.cc/BvHPrJVs/space-ship.png" alt="">
-          <h3>ENTERPRISE</h3>
-          <ul>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>WEB DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>WEB DEVELOPMENT</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>UI/UX DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>GRIPHIC DESIGNER</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>SEO EXPERT</span>
-            </li>
-            <li>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <span>TEAM WORK</span>
-            </li>
-          </ul>
-          <p class="price">₹ 14,000</p>
-          <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform">Book</a>
-        </div>
-      </div>
-<br>
-
-
-
-        <!-- Footer -->
-        <div class="pt-5">
-        <div class="footer card" id="contacts">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="footer-logo">
-                  <h2>VECTORCROP.</h2>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <ul class="footer-menu">
-                  <li><a href="#">About</a> </li>
-                  <li><a href="#main">Privacy</a> </li>
-                  <li><a href="#main">Terms</a> </li>
-                  <li><a href="#" data-toggle="modal" data-target="#contact">Contact</a> </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="footer-links">
-                  <ul>
-                    <li><a href="https://www.instagram.com/vector.crop/"> <img class="img-fluid" src="assets/icons/i1.png" alt="Icon"> </a> </li>
-                    <li><a href="#main"> <img class="img-fluid" src="assets/icons/i2.png" alt="Icon"> </a> </li>
-                    <li><a href="#main"> <img class="img-fluid" src="assets/icons/i3.png" alt="Icon"> </a> </li>
-                    <li><a href="#main"> <img class="img-fluid" src="assets/icons/i4.png" alt="Icon"> </a> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Scroll To Top -->
-           <div class="menu pmd-floating-action"  role="navigation"> 
-	<a href="#main"  id="back-top" class="pmd-floating-action-btn btn-sm pmd-ripple-effect btn"  data-title="Go to top"> 
-    
-		<img src="assets/images/top.png" width="50px">
-	</a> 
+</head>
  
-	<a href="#icon" class="pmd-floating-action-btn btn-sm pmd-ripple-effect" > 
-		<img src="assets/images/1moon.png" style="width:50px; height:auto" id="icon">
-	</a> 
-	<a href="#" data-toggle="modal" data-target="#contact" class="pmd-floating-action-btn btn-sm pmd-ripple-effect" > 
-		<img src="assets/images/phone.png" width="50px">
-	</a> 
-	<a href="#" class="pmd-floating-action-btn btn-sm pmd-ripple-effect" > 
-		<img src="assets/images/settings.png" width="60px" alt="settings">
-	</a> 
-</div>
-          <!-- Scroll To Top Ends-->
-          </div>
-        </div>
-      </div>
-      </div> <!-- Main -->
-    </div><!-- Wrapper -->
+<style>
 
 
-<!-- contact -->
-<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Contact VectorCrop</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container"> 
-          <center>  <a href="https://www.instagram.com/vector.crop/"> <img class="img-fluid" src="assets/icons/instagram.png" width="35px" height="auto"> </a> 
-            <a href="https://github.com/vectorcrop"> <img class="img-fluid ml-3" src="assets/icons/github.png" width="35px" height="auto"> </a> 
-            <a href="https://www.youtube.com/channel/UCsBAJimRq5wQDG3hjg7vHyw"> <img class="img-fluid  ml-3" src="assets/icons/youtube.png" width="40px" height="auto"> </a> 
-    
-            <!-- <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/whatsapp.png" width="35px" height="auto"> </a>  -->
-            <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/twitter.png"  width="35px" height="auto"> </a> 
-            <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/facebook.png"  width="35px" height="auto"> </a> 
-    
-            <a href="#main"> <img class="img-fluid  ml-3" src="assets/icons/linkedin.png" width="35px" height="auto"> </a> 
-    
-          </center><br>    <br> <h1>
-          <strong> 1. Sahil Hussain</strong><br>
-       <div class="row mt-3 g-2">
-        <div class="col-md">
-        <a href="https://wa.me/+919486786436"  class="btn btn-success btn-block"><i class="fa fa-whatsapp mr-2" style="font-size:18px;color:white"></i>Chat</a></div>
-        <div class="col-md">
-        <a href="tel:+919486786436"   class="btn btn-primary btn-block"><i class="fa fa-phone mr-2" style="font-size:18px;color:white"></i>Call</a></div>
-       </div><br><hr><br>
+</style>
+<body class="saas-classic dark-version">
+    <!-- preloader - start -->
 
-       2. Mishab <br>
-       <div class="row mt-3 g-2">
-        <div class="col-md">
-        <a href="https://wa.me/+919947154691"  class="btn btn-success btn-block"><i class="fa fa-whatsapp mr-2" style="font-size:18px;color:white"></i>Chat</a></div>
-        <div class="col-md">
-        <a   href="tel:+919947154691" class="btn btn-primary btn-block"><i class="fa fa-phone mr-2" style="font-size:18px;color:white"></i>Call</a></div>
-       </div><br><hr>
-       <center>Mail : <br><br>
-        <a href = "mailto: thevectorcrop@gmail.com" class="btn btn-danger btn-block">Send Email</a></div><br>
+
+     <div class="preloader d-flex align-items-center justify-content-center" id="preloader">
+    <div class="container1">
+      <div class="div2" id="value"></div>
+      <div class="part3">
         
-
-       </center><br>
-     
-
-
-      </div></h1>
-    </div>
-  </div>
-</div>
-
-<!-- book now -->
-<div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Book Now</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
-      <div class="modal-body">
-        <div class="container">      <h1>
-          <strong> 1. Sahil Hussain</strong><br>
-       <div class="row mt-3 g-2">
-        <div class="col-md">
-        <a href="https://wa.me/+919486786436"  class="btn btn-success btn-block">Chat</a></div>
-        <div class="col-md">
-        <a href="tel:+919486786436"   class="btn btn-primary btn-block">Call</a></div>
-       </div><br><hr><br>
-
-       2. Mishab <br>
-       <div class="row mt-3 g-2">
-        <div class="col-md">
-        <a href="https://wa.me/+919947154691"  class="btn btn-success btn-block">Chat</a></div>
-        <div class="col-md">
-        <a   href="tel:+919947154691" class="btn btn-primary btn-block">Call</a></div>
-       </div><br><hr>
-       <center>Mail : <br><br>
-        <a href = "mailto: thevectorcrop@gmail.com" class="btn btn-danger btn-block">Send Email</a></div>
-
-       </center><br>
+      <div class="part1">
+        VectorCrop
+      </div>
+    </div><br><br>
 
 
-      </div></h1>
-     
-    </div>
-
+    <div class="loader">
+      <div class="loading">
+      </div>
     </div>
   </div>
-</div>
-     <!-- Jquery and Js Plugins -->
-   <script>
-      var icon = document.getElementById("icon");
-      icon.onclick = function(){
-        document.body.classList.toggle("dark-theme");
-        if( document.body.classList.contains("dark-theme")){
-          icon.src = "assets/images/1sun.png";
-          main.style.backgroundColor = "hsl(0deg 0% 7%)";
-        } else {
-          icon.src = "assets/images/1moon.png";
-          main.style.backgroundColor = "hsla(200,40%,30%,.4)";
-        }
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="assets/js/calc.js"></script>
-    <script src="assets/js/jquery-2.1.1.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+  
 
-</html>
+    <div class="up">
+        <a href="#" id="scrollup" class="saas-classic-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <!-- Start of header section
+        ============================================= -->
+        <header id="header_main" class="saas_two_main_header">
+            <div class="container">
+                <div class="s_main_menu">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="brand_logo">
+                                <h3 class="" style="font-weight: 800; color: white;">Vector<font color="#1877f2">Crop</font></h3>
+                                <!-- <img src="assets/images/logo.png" width="10%" alt=""> -->
+
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="main_menu_list clearfix float-right">
+                                <nav class="s2-main-navigation  clearfix ul-li">
+                                    <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#features">Features</a></li>
+                                        <li><a href="#team">Team</a> </li>
+                                        <li><a href="#pricing">Pricing</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+
+                                    </ul>
+                                </nav>
+                                <!-- <div class="saas_sign_up_btn text-center">
+                                    <a href="#!"> Free sign up</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //desktop menu -->
+                <div class="s2-mobile_menu relative-position">
+                    <div class="s2-mobile_menu_button s2-open_mobile_menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="s2-mobile_menu_wrap">
+                        <div class="mobile_menu_overlay s2-open_mobile_menu"></div>
+                        <div class="s2-mobile_menu_content">
+                            <div class="s2-mobile_menu_close s2-open_mobile_menu">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                            <div class="m-brand-logo text-center">
+                                <a href="!#"> <h3 class="" style="font-weight: 800; color: rgb(0, 0, 0);">Vector<font color="#1877f2">Crop</font></h3></a>
+                            </div>
+                            <nav class="s2-mobile-main-navigation  clearfix ul-li">
+                             <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#team">Team</a> </li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#conatct">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of header section
+        ============================================= -->
+
+    <!-- Start of Banner section    
+        ============================================= -->
+     
+        <section id="home" class="saas_two_banner_section relative-position">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="s2-banner_area relative-position">
+                            <div class="s2-banner_content saas2-headline pera-content">
+                                <span class="s2-tilte_tag">inspire the next</span>
+                                <h1>Meet your  
+                                    future goals with <b><span class="text-gradient__indigo-red" style=" font-weight: 800;">VectorCrop</span></b>.
+                                </h1>
+                                <p>We will deliver you marketing and technology solutions in the best way.
+
+                                </p>
+                             
+                            </div>
+                            <div class="banner_mockup">
+
+<div id="w-node-e88ea24b-d518-0b8a-f480-1272223fca53-e2a8f4e0" class="max-width-xl content-left"><div class="browser-mockup outline"><div class="browser-top-bar underlined white"><div class="browser-top-bar-left"><img loading="lazy" src="https://assets.website-files.com/6239c2cd52949d0f76a8f421/6239c2ce52949df848a8f5a8_Lights.svg" alt=""></div></div><div class="browser-window"><div class="w-layout-grid code-list text-color-slate-600">
+    <div class="w-layout-grid code-row">
+        <div id="w-node-_78ff6320-6507-8a29-d023-d27462e02801-e2a8f4e0">1</div>
+        <div id="w-node-_78ff6320-6507-8a29-d023-d27462e02803-e2a8f4e0"><font color="pink">private static</font> <font color="#22d3ee">int</font> update(<font color="#22d3ee">Image</font>) {</div>
+        </div><br>
+        <div class="w-layout-grid code-row">
+            <div id="w-node-_78ff6320-6507-8a29-d023-d27462e02806-e2a8f4e0">2</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02808-e2a8f4e0"><font color="#22d3ee">int</font> <span class="text-color-red-400"> happiness;</span></div></div><br><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0280d-e2a8f4e0">3</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0280f-e2a8f4e0"><font color="#22d3ee">MyDesktop</font> desktop = &nbsp; &nbsp; &nbsp; <span class="text-color-red-400"></span><span class="text-color-red-400"></span><br></div></div><br><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02819-e2a8f4e0">4</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0281b-e2a8f4e0"><font color="pink">new</font> <font color="#22d3ee">MyDesktop</font></div></div>
+            <br><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0281e-e2a8f4e0">5</div><font color="white">desktop.apply(image);</font></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02821-e2a8f4e0"></div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02823-e2a8f4e0"><br></div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02827-e2a8f4e0">6</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02829-e2a8f4e0"> &nbsp;happiness = <span class="text-color-red-400">"INFINITY"</span><font color="white">;</font></div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0282e-e2a8f4e0"></div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02830-e2a8f4e0"></div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02833-e2a8f4e0">7</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02835-e2a8f4e0"><font color="pink">return </font>happiness; </div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02838-e2a8f4e0"></div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0283a-e2a8f4e0"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="text-color-cyan-400"></span> </div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02863-e2a8f4e0">8</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02865-e2a8f4e0">}</div></div></div></div></div></div>                            </div>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+            <!-- <div class="s2-banner_shape1 position-absolute" data-parallax='{"y" : 100}'><img src="assets/img/saas-c/banner/b-shape4.png" alt=""></div> -->
+
+            <div class="s2-banner_shape2 position-absolute"><img src="assets/images/b-shape3.png" alt=""></div>
+            
+            <!-- <div class="s2-banner_shape3 position-absolute"><img src="assets/img/saas-c/banner/b-shape2.png" alt=""></div> -->
+        </section>
+    <!-- End of Banner section
+        ============================================= -->
+
+
+
+
+        <section id="about" class="smm-feature-section" style="background-color: #050e1a;">
+            <div class="container">
+                <div class="saas_two_section_title saas2-headline text-center"><br><br>
+                    <h2>Let's See What’s Inside<span>
+                    </span> </h2>
+                </div><br><br>
+                <div class="smm-feature-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeFromUp;">
+                            <div class="smm-feature-innerbox">
+                                <div class="smm-feature-icon float-left">
+                                    <img src="assets/images/web.png" width="25%" style="margin-bottom: 13px" alt="">
+                                </div>
+                                <h3><a href="#">Website Development</a></h3>
+                                <div class="smm-feature-text smm-headline pera-content">
+                                    <p>
+                                        We’ll create a website to attract visitors, convert them into customers and encourage them to come back.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="250ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromUp;">
+                            <div class="smm-feature-innerbox">
+                                <div class="smm-feature-icon float-left">
+                                    <img src="assets/images/sm.png" width="25%" style="margin-bottom: 13px;" alt="">
+                                </div>
+                                <h3><a href="#">Social Media Advertisement</a></h3>
+                                <div class="smm-feature-text smm-headline pera-content">
+                                    <p>
+                                        We'll help you create a breakthrough product or highly improve your services.
+                                    </p><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
+                            <div class="smm-feature-innerbox">
+                                <div class="smm-feature-icon float-left">
+                                    <img src="assets/images/pd.png" width="25%" style="margin-bottom: 13px;" alt="">
+                                </div>
+                                <h3><a href="#">Product/Contents Designing.</a></h3>
+                                <div class="smm-feature-text smm-headline pera-content">
+                                    <p>
+                                        We'll deliver To get advantages from content marketing you need to reaching an audience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
+                            <div class="smm-feature-innerbox">
+                                <div class="smm-feature-icon float-left">
+                                    <img src="assets/images/android.png" width="25%" style="margin-bottom: 13px;" alt="">
+                                </div>
+                                <h3><a href="#">Application Development</a></h3>
+                                <div class="smm-feature-text smm-headline pera-content">
+                                    <p>
+                                        We’ll create a App to attract visitors, convert them into customers and encourage them to come back.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
+                            <div class="smm-feature-innerbox">
+                                <div class="smm-feature-icon float-left">
+                                    <img src="assets/images/ui.png" width="25%" style="margin-bottom: 13px;" alt="">
+                                </div>
+                                <h3><a href="#">UI/UX Designing</a></h3>
+                                <div class="smm-feature-text smm-headline pera-content">
+                                    <p>
+                                        VectorCrop is the right place for you to explore and learn more about the ui/ux design.
+                                    </p><br>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
+                            <div class="smm-feature-innerbox">
+                                <div class="smm-feature-icon float-left">
+                                    <img src="assets/images/diaphragm.png" width="25%" style="margin-bottom: 13px;" alt="">
+                                </div>
+                                <h3><a href="#">Photography & Videography</a></h3>
+                                <div class="smm-feature-text smm-headline pera-content">
+                                    <p>
+                                        We'll deliver To get advantages from content marketing you need to reaching an audience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                  </div></div></div><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Start of feature section   
+        ============================================= -->
+        <section id="features" class="saas_two_feature_section" style="background-color: white; color: black;">
+            <div class="container">
+                <div class="s2-feature_content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 wow fadeFromUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="s2-feature_left">
+                                <div class="s2-feature_text saas2-headline pera-content">
+                                    <span class="feature_tag">Our awesome features </span>
+                                    <h2 style=" color: black;">Our features will help
+                                        to<span> improve business</span>
+                                    </h2>
+                                    <p style=" color: black;">Every modern problem has a modern solution. We are introducing our solutions for your business to became more powerful and essential. </p>
+
+                                    <div class="saas_btn">
+                                        <a href="#contact"><i class="fas fa-phone" ></i><font color="black">Meet us</font></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /feature left content -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="s2-feature_right">
+                                <div class="s2-feature_list s2-grean wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="s2-feature_icon text-center relative-position">
+                                        <i class="fab fa-codepen"></i>
+                                    </div>
+                                    <div class="s2-feature_text_box saas2-headline pera-content">
+                                        <h3>Software development</h3>
+                                        <p>Create stunning, effective Softwares with custom-designed and modules.</p>
+                                    </div>
+                                </div>
+                                <!-- list item -->
+                                <div class="s2-feature_list s2-purple wow fadeFromUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                    <div class="s2-feature_icon text-center relative-position">
+                                        <i class="fas fa-pen-square"></i>
+                                    </div>
+                                    <div class="s2-feature_text_box saas2-headline pera-content">
+                                        <h3>UI/UX design</h3>
+                                        <p>Create stunning, effective documents with custom-designed theme & template.</p>
+                                    </div>
+                                </div>
+                                <!-- list item -->
+                                <div class="s2-feature_list s2-pink wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div class="s2-feature_icon text-center relative-position">
+                                        <i class="fas fa-headphones"></i>
+                                    </div>
+                                    <div class="s2-feature_text_box saas2-headline pera-content">
+                                        <h3>Dedicated Support</h3>
+                                        <p>We are introducing 24x7 super support for our happy customers.</p>
+                                    </div>
+                                </div>
+                                <!-- list item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End of feature section   
+        ============================================= -->
+
+
+
+        
+    <!-- Start of member section   
+        ============================================= -->
+        <section id="team" class="saas_two_team_section" style="background-color: #050e1a;">
+            <div class="container">
+                <div class="saas_two_section_title saas2-headline text-center">
+                    <span class="title_tag">Meet Our Devs</span>
+                    <h2>Our Team Developers.</h2>
+                </div>
+                <div id="s2_team_slide" class="s2-team_membar owl-carousel">
+                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="s2_tean_img">
+                            <img src="assets/images/msb.jpg" alt="">
+                        </div>
+                        <div class="s2_tean_text">
+                            <div class="s2_name_info saas2-headline">
+                                <h3>Mishab</h3>
+                                <span class="s2-designation">Full Stack Web Developer</span>
+                                <div class="s2_mem_contact">
+                                    <span><i class="fas fa-phone"></i> +91 9947 1546 91</span>
+                                    <span><i class="fas fa-envelope"></i> mishabmsb91@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="s2-mem_social ul-li-block">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
+                        </div> -->
+                    </div>
+                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2_tean_img">
+                            <img src="assets/images/aju.jpg" alt="">
+                        </div>
+                        <div class="s2_tean_text">
+                            <div class="s2_name_info saas2-headline">
+                                <h3> Ajzal Bin Faisal</h3>
+                                <span class="s2-designation">Full Stack App Developer</span>
+                                <div class="s2_mem_contact">
+                                    <span><i class="fas fa-phone"></i> +91 80783 34505</span>
+                                    <span><i class="fas fa-envelope"></i> ajufaizy2222@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="s2-mem_social ul-li-block">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
+                        </div> -->
+                    </div>
+                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="s2_tean_img">
+                            <img src="assets/images/shabeer.jpeg" alt="">
+                        </div>
+                        <div class="s2_tean_text">
+                            <div class="s2_name_info saas2-headline">
+                                <h3>Muhammed Shabeer</h3>
+                                <span class="s2-designation">Designer &  Back-end Developer</span>
+                                <div class="s2_mem_contact">
+                                    <span><i class="fas fa-phone"></i> +91 6238 261 610</span>
+                                    <span><i class="fas fa-envelope"></i> androlite4@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="s2-mem_social ul-li-block">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
+                        </div> -->
+                    </div>
+
+                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="s2_tean_img">
+                            <img src="assets/images/sahil.jpg" alt="">
+                        </div>
+                        <div class="s2_tean_text">
+                            <div class="s2_name_info saas2-headline">
+                                <h3>Sahil Hussain</h3>
+                                <span class="s2-designation">Full Stack Ruby Developer</span>
+                                <div class="s2_mem_contact">
+                                    <span><i class="fas fa-phone"></i> +91 94867 86436</span>
+                                    <span><i class="fas fa-envelope"></i> sahil.salem@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="s2-mem_social ul-li-block">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
+                        </div> -->
+                    </div>
+                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+                        <div class="s2_tean_img">
+                            <img src="assets/images/alavi.jpg" alt="">
+                        </div>
+                        <div class="s2_tean_text">
+                            <div class="s2_name_info saas2-headline">
+                                <h3>Shabeer alavi</h3>
+                                <span class="s2-designation">Full Stack Web Developer</span>
+                                <div class="s2_mem_contact">
+                                    <span><i class="fas fa-phone"></i> +91 799 446 5741</span>
+                                    <span><i class="fas fa-envelope"></i> shabeeralavi001@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="s2-mem_social ul-li-block">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
+                        </div> -->
+                    </div>
+                  
+                
+                    
+            
+                </div>
+            </div>
+        </section>
+    <!-- End  of member section   
+        ============================================= -->
+
+    <!-- Start of integration section   
+        ============================================= -->
+        <section id="integration" class="integration_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="integration_img">
+                            <img src="assets/images/img1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeFromRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="integration_text saas2-headline pera-content">
+                            <span class="feature_tag">Our Services </span>
+                            <h2>Why people's  <span>trust</span>
+                                VectorCrop
+                            </h2>
+                            <p>We will deliver you marketing and technology solutions in the best way.
+                            </p>
+                            <a href="#contact">Connect with us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End of integration section   
+        ============================================= -->
+
+
+   
+    <!-- Start of pricing section  
+        ============================================= -->
+        <section id="pricing" class="s2-pricing_section" style="background-color: white; color:black;">
+            <div class="container">
+                <div class="saas_two_section_title saas2-headline text-center">
+                    <span class="title_tag">
+                        Pricing 
+                    </span>
+                    <h2 style="color: black;"> Our best pricing  offer!</h2>
+                </div>
+                <!-- /section title -->
+                <div class="s2-pricing_content">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-4 col-md-6 wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="s2-pricing_item">
+                                <div class="s2-pricing_price relative-position clearfix">
+                                    <div class="pricing_icon  float-left text-center">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m509.472656 259.800781c1.632813-2.449219 2.527344-5.417969 2.527344-8.363281v-236.367188c.003906-8.199218-6.859375-15.070312-15.035156-15.070312h-235.902344c-6.914062 0-13.113281 4.949219-14.65625 11.703125l-69.167969 302.890625c-7.230469 6.433594-13.390625 8.175781-21.199219 10.378906-11.878906 3.347656-26.660156 7.515625-43.347656 27.667969-16.375 19.78125-18.917968 36.898437-21.160156 52.007813-1.980469 13.351562-3.546875 23.898437-14.558594 37.199218-10.640625 12.847656-18.375 14.925782-29.078125 17.800782-12.332031 3.316406-27.683593 7.4375-44.429687 27.667968-5.300782 6.402344-4.417969 15.902344 1.96875 21.214844 2.808594 2.332031 6.210937 3.46875 9.59375 3.46875 4.320312 0 8.605468-1.855469 11.578125-5.445312 10.640625-12.847657 18.371093-14.925782 29.074219-17.800782 12.335937-3.3125 27.6875-7.4375 44.433593-27.667968 16.375-19.777344 18.917969-36.898438 21.160157-52.003907 1.984374-13.355469 3.550781-23.902343 14.5625-37.203125 10.703124-12.929687 18.101562-15.015625 28.347656-17.902344 9.886718-2.789062 21.789062-6.15625 35.121094-18.824218l301.011718-69.023438c3.710938-.851562 7.046875-3.15625 9.15625-6.328125zm-239.816406-214.820312 88.097656 88.273437-140.382812 140.664063zm27.703125-14.847657h163.308594l-81.65625 81.816407zm81.65625 124.425782 88.097656 88.277344-228.476562 52.386718zm21.261719-21.304688 81.652344-81.816406v163.636719zm0 0" />
+                                        </svg>
+                                    </div>
+                                    <div class="s2-pricing_text">
+                                        <span>PERSONAL
+                                        </span>
+                                        <p><b>₹ 7,000/-</b></p>
+                                    </div>
+                                    <div class="s2-icon_bg">
+                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m509.472656 259.800781c1.632813-2.449219 2.527344-5.417969 2.527344-8.363281v-236.367188c.003906-8.199218-6.859375-15.070312-15.035156-15.070312h-235.902344c-6.914062 0-13.113281 4.949219-14.65625 11.703125l-69.167969 302.890625c-7.230469 6.433594-13.390625 8.175781-21.199219 10.378906-11.878906 3.347656-26.660156 7.515625-43.347656 27.667969-16.375 19.78125-18.917968 36.898437-21.160156 52.007813-1.980469 13.351562-3.546875 23.898437-14.558594 37.199218-10.640625 12.847656-18.375 14.925782-29.078125 17.800782-12.332031 3.316406-27.683593 7.4375-44.429687 27.667968-5.300782 6.402344-4.417969 15.902344 1.96875 21.214844 2.808594 2.332031 6.210937 3.46875 9.59375 3.46875 4.320312 0 8.605468-1.855469 11.578125-5.445312 10.640625-12.847657 18.371093-14.925782 29.074219-17.800782 12.335937-3.3125 27.6875-7.4375 44.433593-27.667968 16.375-19.777344 18.917969-36.898438 21.160157-52.003907 1.984374-13.355469 3.550781-23.902343 14.5625-37.203125 10.703124-12.929687 18.101562-15.015625 28.347656-17.902344 9.886718-2.789062 21.789062-6.15625 35.121094-18.824218l301.011718-69.023438c3.710938-.851562 7.046875-3.15625 9.15625-6.328125zm-239.816406-214.820312 88.097656 88.273437-140.382812 140.664063zm27.703125-14.847657h163.308594l-81.65625 81.816407zm81.65625 124.425782 88.097656 88.277344-228.476562 52.386718zm21.261719-21.304688 81.652344-81.816406v163.636719zm0 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="s2-pricing_list ul-li-block">
+                                    <ul>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                            Web Designer
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-checked  float-left text-center"></div>
+                                            Web Development
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"></div>
+                                            UI/UX Designer
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
+                                            Graphic Designer
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
+                                            Seo Expert
+                                        </li>
+                                          <li>
+                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
+                                            Team Work
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="s2-pricing_btn">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"><i class="fas fa-cloud-download-alt" target="_blank"></i> Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-4 col-md-6 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="s2-pricing_item">
+                                <div class="s2-pricing_price relative-position clearfix">
+                                    <div class="pricing_icon  float-left text-center">
+                                      
+                                        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve"><g><g><path d="M511.996,60.921c0.168-16.341-6.104-31.703-17.659-43.259C482.933,6.257,467.822,0,451.719,0c-0.213,0-0.427,0.001-0.642,0.003c-16.341,0.168-31.571,6.755-42.885,18.545l-89.617,93.385L84.076,34.329l-69.253,69.253l195.97,120.664l-80.635,84.026l-63.288-10.39L0,364.75l109.054,38.197L147.25,512l66.87-66.87l-10.39-63.288l84.026-80.635L408.42,497.178l69.254-69.253L400.07,193.426l93.384-89.617C505.243,92.493,511.828,77.262,511.996,60.921z M472.661,82.142L365.608,184.876l77.739,234.907l-29.285,29.285L293.814,253.773L171.537,371.116l10.454,63.675l-22.193,22.193l-27.18-77.602l-77.602-27.18l22.193-22.193l63.675,10.454l117.343-122.276L62.933,97.94l29.285-29.285l234.907,77.739L429.859,39.341c5.679-5.919,13.326-9.225,21.529-9.31c0.107-0.002,0.215-0.002,0.321-0.002c8.083,0,15.67,3.141,21.396,8.867c5.802,5.801,8.949,13.513,8.865,21.716C481.885,68.815,478.579,76.461,472.661,82.142z"/></g></g></svg>
+                                    </div>
+
+                                    
+                                    <div class="s2-pricing_text">
+                                        <span>SMALL TEAM
+                                        </span>
+                                        <p><b>₹ 10,000/</b></p>
+
+                                    </div>
+                                    <div class="s2-icon_bg">
+                                        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve"><g><g><path d="M511.996,60.921c0.168-16.341-6.104-31.703-17.659-43.259C482.933,6.257,467.822,0,451.719,0c-0.213,0-0.427,0.001-0.642,0.003c-16.341,0.168-31.571,6.755-42.885,18.545l-89.617,93.385L84.076,34.329l-69.253,69.253l195.97,120.664l-80.635,84.026l-63.288-10.39L0,364.75l109.054,38.197L147.25,512l66.87-66.87l-10.39-63.288l84.026-80.635L408.42,497.178l69.254-69.253L400.07,193.426l93.384-89.617C505.243,92.493,511.828,77.262,511.996,60.921z M472.661,82.142L365.608,184.876l77.739,234.907l-29.285,29.285L293.814,253.773L171.537,371.116l10.454,63.675l-22.193,22.193l-27.18-77.602l-77.602-27.18l22.193-22.193l63.675,10.454l117.343-122.276L62.933,97.94l29.285-29.285l234.907,77.739L429.859,39.341c5.679-5.919,13.326-9.225,21.529-9.31c0.107-0.002,0.215-0.002,0.321-0.002c8.083,0,15.67,3.141,21.396,8.867c5.802,5.801,8.949,13.513,8.865,21.716C481.885,68.815,478.579,76.461,472.661,82.142z"/></g></g></svg>
+                                       
+                                    </div>
+                                </div>
+                                <div class="s2-pricing_list ul-li-block">
+                                    <ul>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                            Web Designer
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-checked  float-left text-center"></div>
+                                            Web Development
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                            UI/UX Designer
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                            Graphic Designer
+                                        </li>
+                                        <li>
+                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
+                                            Seo Expert
+                                        </li>
+                                          <li>
+                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
+                                            Team Work
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="s2-pricing_btn">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"><i class="fas fa-cloud-download-alt" target="__blank"></i> Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-4 col-md-6 wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="s2-pricing_item">
+                                <div class="s2-pricing_price relative-position clearfix">
+                                    <div class="pricing_icon  float-left text-center">
+                                     
+
+  <svg  enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m511.4 38.222c-1.109-20.338-17.284-36.511-37.622-37.621-41.038-2.242-121.342-.061-198.13 39.656-39.145 20.248-80.545 54.577-113.584 94.185-.407.488-.803.979-1.207 1.468l-74.98 5.792c-12.342.954-23.335 7.423-30.161 17.747l-51.154 77.372c-5.177 7.83-6 17.629-2.203 26.212 3.798 8.584 11.602 14.566 20.877 16.003l63.171 9.784c-.223 1.228-.447 2.455-.652 3.683-2.103 12.58 2.065 25.514 11.151 34.599l87.992 87.993c7.533 7.533 17.712 11.686 28.142 11.686 2.148 0 4.308-.177 6.458-.536 1.228-.205 2.455-.429 3.683-.652l9.784 63.172c1.437 9.275 7.419 17.08 16.001 20.877 3.571 1.58 7.35 2.36 11.112 2.36 5.283-.001 10.529-1.539 15.101-4.562l77.372-51.155c10.325-6.827 16.793-17.82 17.745-30.161l5.792-74.979c.489-.404.981-.8 1.469-1.207 39.609-33.039 73.939-74.439 94.186-113.585 39.719-76.791 41.896-157.096 39.657-198.131zm-175.394 393.037-74.011 48.933-9.536-61.565c31.28-9.197 62.223-23.927 91.702-43.66l-3.773 48.845c-.235 3.047-1.833 5.762-4.382 7.447zm-129.895-37.377-87.993-87.993c-2.245-2.246-3.283-5.401-2.774-8.44 2.616-15.643 6.681-30.534 11.713-44.562l132.028 132.028c-16.848 6.035-31.939 9.635-44.534 11.741-3.044.506-6.195-.529-8.44-2.774zm-117.923-222.269 48.844-3.773c-19.734 29.479-34.464 60.422-43.661 91.702l-61.564-9.535 48.934-74.012c1.686-2.55 4.401-4.147 7.447-4.382zm270.155 155.286c-24.233 20.213-47.756 34.833-69.438 45.412l-149.221-149.221c13.858-28.304 30.771-51.873 45.417-69.431 30.575-36.655 68.602-68.276 104.331-86.756 70.474-36.453 144.725-38.416 182.713-36.348 5.028.274 9.027 4.273 9.301 9.302 2.071 37.988.104 112.238-36.349 182.713-18.479 35.728-50.1 73.754-86.754 104.329z"/><path d="m350.721 236.243c19.202-.002 38.412-7.312 53.031-21.931 14.166-14.165 21.966-32.999 21.966-53.031s-7.801-38.866-21.966-53.031c-29.242-29.243-76.822-29.241-106.062 0-14.166 14.165-21.967 32.999-21.967 53.031s7.802 38.866 21.967 53.031c14.622 14.622 33.822 21.933 53.031 21.931zm-31.82-106.781c8.772-8.773 20.295-13.159 31.818-13.159 11.524 0 23.047 4.386 31.819 13.159 8.499 8.499 13.179 19.799 13.179 31.818s-4.68 23.32-13.179 31.819c-17.544 17.545-46.093 17.544-63.638 0-8.499-8.499-13.18-19.799-13.18-31.818s4.682-23.32 13.181-31.819z"/><path d="m15.301 421.938c3.839 0 7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0l-48.972 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.928 2.929 6.767 4.394 10.606 4.394z"/><path d="m119.761 392.239c-5.857-5.858-15.355-5.858-21.213 0l-94.154 94.155c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.767 4.393 10.606 4.393s7.678-1.464 10.606-4.394l94.154-94.154c5.859-5.858 5.859-15.355.001-21.213z"/><path d="m143.429 437.12-48.973 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.212 0z"/></svg>
+
+                                    </div>
+                                    <div class="s2-pricing_text">
+                                        <span>ENTERPRISE</span>
+                                        <p><b>₹ 14,000/-</b></p>
+
+                                    </div>
+                                    <div class="s2-icon_bg">
+                                      
+ <svg  enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m511.4 38.222c-1.109-20.338-17.284-36.511-37.622-37.621-41.038-2.242-121.342-.061-198.13 39.656-39.145 20.248-80.545 54.577-113.584 94.185-.407.488-.803.979-1.207 1.468l-74.98 5.792c-12.342.954-23.335 7.423-30.161 17.747l-51.154 77.372c-5.177 7.83-6 17.629-2.203 26.212 3.798 8.584 11.602 14.566 20.877 16.003l63.171 9.784c-.223 1.228-.447 2.455-.652 3.683-2.103 12.58 2.065 25.514 11.151 34.599l87.992 87.993c7.533 7.533 17.712 11.686 28.142 11.686 2.148 0 4.308-.177 6.458-.536 1.228-.205 2.455-.429 3.683-.652l9.784 63.172c1.437 9.275 7.419 17.08 16.001 20.877 3.571 1.58 7.35 2.36 11.112 2.36 5.283-.001 10.529-1.539 15.101-4.562l77.372-51.155c10.325-6.827 16.793-17.82 17.745-30.161l5.792-74.979c.489-.404.981-.8 1.469-1.207 39.609-33.039 73.939-74.439 94.186-113.585 39.719-76.791 41.896-157.096 39.657-198.131zm-175.394 393.037-74.011 48.933-9.536-61.565c31.28-9.197 62.223-23.927 91.702-43.66l-3.773 48.845c-.235 3.047-1.833 5.762-4.382 7.447zm-129.895-37.377-87.993-87.993c-2.245-2.246-3.283-5.401-2.774-8.44 2.616-15.643 6.681-30.534 11.713-44.562l132.028 132.028c-16.848 6.035-31.939 9.635-44.534 11.741-3.044.506-6.195-.529-8.44-2.774zm-117.923-222.269 48.844-3.773c-19.734 29.479-34.464 60.422-43.661 91.702l-61.564-9.535 48.934-74.012c1.686-2.55 4.401-4.147 7.447-4.382zm270.155 155.286c-24.233 20.213-47.756 34.833-69.438 45.412l-149.221-149.221c13.858-28.304 30.771-51.873 45.417-69.431 30.575-36.655 68.602-68.276 104.331-86.756 70.474-36.453 144.725-38.416 182.713-36.348 5.028.274 9.027 4.273 9.301 9.302 2.071 37.988.104 112.238-36.349 182.713-18.479 35.728-50.1 73.754-86.754 104.329z"/><path d="m350.721 236.243c19.202-.002 38.412-7.312 53.031-21.931 14.166-14.165 21.966-32.999 21.966-53.031s-7.801-38.866-21.966-53.031c-29.242-29.243-76.822-29.241-106.062 0-14.166 14.165-21.967 32.999-21.967 53.031s7.802 38.866 21.967 53.031c14.622 14.622 33.822 21.933 53.031 21.931zm-31.82-106.781c8.772-8.773 20.295-13.159 31.818-13.159 11.524 0 23.047 4.386 31.819 13.159 8.499 8.499 13.179 19.799 13.179 31.818s-4.68 23.32-13.179 31.819c-17.544 17.545-46.093 17.544-63.638 0-8.499-8.499-13.18-19.799-13.18-31.818s4.682-23.32 13.181-31.819z"/><path d="m15.301 421.938c3.839 0 7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0l-48.972 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.928 2.929 6.767 4.394 10.606 4.394z"/><path d="m119.761 392.239c-5.857-5.858-15.355-5.858-21.213 0l-94.154 94.155c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.767 4.393 10.606 4.393s7.678-1.464 10.606-4.394l94.154-94.154c5.859-5.858 5.859-15.355.001-21.213z"/><path d="m143.429 437.12-48.973 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.212 0z"/></svg>
+
+
+
+                                   </div>
+                               </div>
+                               <div class="s2-pricing_list ul-li-block">
+                                <ul>
+                                    <li>
+                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                        Web Designer
+                                    </li>
+                                    <li>
+                                        <div class="s2-pricing_list_icon s2-checked  float-left text-center"></div>
+                                        Web Development
+                                    </li>
+                                    <li>
+                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                        UI/UX Designer
+                                    </li>
+                                    <li>
+                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                        Graphic Designer
+                                    </li>
+                                    <li>
+                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                        Seo Expert
+                                    </li>
+                                      <li>
+                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
+                                        Team Work
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s2-pricing_btn">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"><i class="fas fa-cloud-download-alt" target="__blank"></i> Book Now</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of pricing section   
+        ============================================= -->    
+
+    <!-- Start of footer section
+        ============================================= -->
+        <footer id="contact" class="saas_two_footer_section relative-position" style="background-color: black;">
+           <br>
+            <div  id="contact" class="footer_content pera-content" style="background-color: black;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="s2_footer_widget clearfix ul-li-block  saas2-headline">
+                                <div class="s2_footer_about">
+                                    <div class="s2-footer_logo">
+                                        <h2 class="" style="font-weight: 800; color: white;">Vector<font color="#1877f2">Crop</font></h2>                                
+                                        </div>
+                                    <div class="footer_about">
+                                        Calicut, Kerala
+                                        India
+                                    </div>
+                                    <span><i class="fas fa-phone"></i> Ajzal : +91 80 7833 4505<br> <i class="fas fa-phone"></i> Mishab : +91 9947 1546 91 <br><br><br><i class="fas fa-envelope"></i> thevectorcrop@gmail.com</span>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class="col-lg-4 col-md-12">
+                            <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
+                                <div class="s2_footer_social">
+                                    <h3 class="s2_widget_title">
+                                        <span>Newsletter</span> 
+                                        <i></i>
+                                    </h3>
+                                    <p>Send us a newsletter to get update</p>
+                                    <form action="#">
+                                        <font color="white">
+                                        <input  name="email" type="email" placeholder="Enter your email address"></font>
+                                        <button  type="submit" value="Submit"> <i class="fas fa-paper-plane"></i></button>
+                                    </form>
+                                    <!-- <a href="#"><i class="fb-bg fab fa-facebook-f"></i></a> -->
+                                    <a href="https://github.com/vectorcrop"><i class="tw-bg fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/vector_crop/"><i class="bh-bg fab fa-instagram"></i></a>
+                                   
+                                    <a href="https://api.whatsapp.com/send/?phone=8078334505&text&app_absent=0"><i class="dr-bg fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="s2-copyright text-center">2022 © All rights reserved by <a href="https://www.Vectorcrop.com">  <font color="#1877f2">VectorCrop</font></a></div>
+    <!-- End of footer section 
+        ============================================= -->
+
+        <!-- JS library -->
+        <script>
+            function animateValue(obj, start, end, duration) {
+              let startTimestamp = null;
+              const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                  window.requestAnimationFrame(step);
+                }
+              };
+              window.requestAnimationFrame(step);
+            }
+        
+            const obj = document.getElementById("");
+            animateValue(obj, 0, 100, 3000);
+          </script>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/pagenav.js"></script>
+        <script src="assets/js/jquery.barfiller.js"></script>
+        <script src="assets/js/parallax-scroll.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+    </html>
+
+    12
