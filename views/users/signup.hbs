@@ -1,0 +1,162 @@
+<style>
+
+	.saas-classic.dark-version {
+    background-image: url(images/wall2.png);
+	background-repeat: no-repeat;
+}
+*{
+ margin: 0;
+ padding: 0;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+ background-position: top;
+ height: 80%;
+ font-family: -apple-system-short-footnote;
+}
+
+.blurred-box{
+  position: relative;
+  width: 250px;
+  height: 450px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.blurred-box:after{
+ content: '';
+ width: 300px;
+ height: 300px;
+ position: absolute;
+ left: -25px;
+ left position
+ right: 0;
+ top: -25px;  
+ top position 
+ bottom: 0;
+}
+
+
+/* Form which you dont need */
+.user-login-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1;
+}
+.user-login-box > *{
+  display: inline-block;
+  width: 200px;
+}
+
+.user-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url('images/vclogo.png');
+}
+
+.user-name{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+input.user-password {
+    width: 243px;
+    height: 34px;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    padding: 12px 33px;
+    border: 0;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+input{
+ font-size:small;
+ background: url(images/email.svg) no-repeat scroll 7px 7px;
+ background-size: 18px;
+ }
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 50px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-white {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #ffffff;
+    padding: 3px 6.343rem;
+}
+p{
+	font-size: 12px;
+	text-align: center;
+}
+
+</style>
+
+<div class="blurred-box">
+	<form action="/signup" method="POST">
+
+  <div class="user-login-box">
+    <span class="user-icon"></span>
+    <div class="user-name">Welcome to vectorcrop</div>
+              {{#if signInErr}}
+              <p>{{signInErr}}!</p>
+                        
+               {{/if}}
+
+    	    <input class="user-password mb-2" type="text" name="Name" placeholder="Username" 
+style=" 
+ background: url(images/user.svg) no-repeat scroll 7px 7px;
+ background-size: 18px;
+ background-color:rgba(0, 0, 0, 0.63);
+ color: rgb(238, 238, 238);"
+ required
+  />
+	    <input class="user-password mb-2" type="email"  name="Email" placeholder="Email" 
+style=" 
+ background: url(images/email.svg) no-repeat scroll 7px 7px;
+ background-size: 18px;
+ background-color:rgba(0, 0, 0, 0.63);
+ color: rgb(238, 238, 238);"
+ required
+  />
+    <input class="user-password" type="password" name="Password" placeholder="Password" 
+style=" 
+ background: url(images/eye.svg) no-repeat scroll 7px 7px;
+ background-size: 18px;
+ background-color:rgba(0, 0, 0, 0.63);
+ color: rgb(238, 238, 238);"
+ required
+  />
+  </div>
+    <button type="submit" href="" class="btn btn-white mt-3 btn-sm">Login</button>
+	<p class="mt-3 text-white"><a href="/signin">Already have an account? Signin Now</a></p>
+
+
+  </form>
+</div>
