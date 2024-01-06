@@ -87,6 +87,21 @@
     .fade-in {
         opacity: 0;
         animation: fadeIn 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        width: 10%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .fade-in {
+            width: 22%;
+        }
+
+        h5 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
 
     @keyframes fadeIn {
@@ -107,7 +122,7 @@
         <i class="fa fa-link my-float"></i>
     </a>
     <div class="container">
-        <center> <img class="mb-3 fade-in" src="img.png" width="10%"></center>
+        <center> <img class="mb-3 fade-in" src="img.png"></center>
         <h5 class="ml3 text-white">We're taking time out for maintenace!</h5>
         <p class="ml4 text-white">We hope to be back soon.</p>
     </div>
