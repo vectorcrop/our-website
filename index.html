@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>VectorCrop - Software Development Agency.</title>
     <meta property="og:title" content="VectorCrop - Software Development Agency.">
-    <meta property="og:description" content="inspire the next || Meet your future goals with VectorCrop. || We will deliver you marketing and technology solutions in the best way.">
+    <meta property="og:description"
+        content="inspire the next || Meet your future goals with VectorCrop. || We will deliver you marketing and technology solutions in the best way.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
@@ -21,748 +22,140 @@
     <meta property="og:image:alt" content="VectorCrop">
 
 </head>
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3987679242106578"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<body class="saas-classic dark-version">
-    <!-- preloader - start -->
+<style>
+    html,
+    body {
+        background-color: black;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .ml3 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
-     <div class="preloader d-flex align-items-center justify-content-center" id="preloader">
-    <div class="container1">
-      <div class="div2" id="value"></div>
-      <div class="part3">
-        
-      </div>
-      <div class="part1">
-        VectorCrop.
-      </div>
-    </div><br><br>
+    .ml4 {
+        text-align: center;
+    }
 
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: rgb(0, 0, 0);
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        border: 1px;
+    }
 
-    <div class="loader">
-      <div class="loading">
-      </div>
-         </div>
-  </div>
-  
+    .float::before {
+        content: "Contact Us";
+        position: absolute;
+        top: 50%;
+        right: calc(100% + 0px);
+        /* Adjust the distance from the button */
+        transform: translateY(-50%);
+        background-color: #292929;
+        color: #FFF;
+        width: 170%;
+        padding: 8px;
+        border-radius: 4px;
+        display: none;
+    }
 
-    <div class="up">
-        <a href="#" id="scrollup" class="saas-classic-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    .float:hover::before {
+        display: block;
+    }
+
+    .my-float {
+        margin-top: 22px;
+        color: #696969;
+    }
+
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            /* Starting opacity */
+        }
+
+        to {
+            opacity: 1;
+            /* Ending opacity */
+        }
+    }
+</style>
+
+<body>
+    <a href="mailto:support@vectorcrop.com" class="float">
+        <i class="fa fa-link my-float"></i>
+    </a>
+    <div class="container">
+        <center> <img class="mb-3 fade-in" src="img.png" width="10%"></center>
+        <h5 class="ml3 text-white">We're taking time out for maintenace!</h5>
+        <p class="ml4 text-white">We hope to be back soon.</p>
     </div>
-    <!-- Start of header section
-        ============================================= -->
-        <header id="header_main" class="saas_two_main_header">
-            <div class="container">
-                <div class="s_main_menu">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="brand_logo">
-                                <h3 class="" style="font-weight: 800; color: white;">Vector<font color="#1877f2">Crop</font></h3>
-                                <!-- <img src="assets/images/logo.png" width="10%" alt=""> -->
+    <script>
+        // Wrap every letter in a span
+        var textWrapper1 = document.querySelector('.ml3');
+        textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-                            </div>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="main_menu_list clearfix float-right">
-                                <nav class="s2-main-navigation  clearfix ul-li">
-                                    <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
-                                        <li><a href="#home">Home</a></li>
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#features">Features</a></li>
-                                        <li><a href="#team">Team</a> </li>
-                                        <li><a href="#pricing">Pricing</a></li>
-                                        <li><a href="#contact">Contact</a></li>
+        var textWrapper2 = document.querySelector('.ml4');
+        textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-                                    </ul>
-                                </nav>
-                                <!-- <div class="saas_sign_up_btn text-center">
-                                    <a href="#!"> Free sign up</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- //desktop menu -->
-                <div class="s2-mobile_menu relative-position">
-                    <div class="s2-mobile_menu_button s2-open_mobile_menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div class="s2-mobile_menu_wrap">
-                        <div class="mobile_menu_overlay s2-open_mobile_menu"></div>
-                        <div class="s2-mobile_menu_content">
-                            <div class="s2-mobile_menu_close s2-open_mobile_menu">
-                                <i class="far fa-times-circle"></i>
-                            </div>
-                            <div class="m-brand-logo text-center">
-                                <a href="!#"> <h3 class="" style="font-weight: 800; color: rgb(0, 0, 0);">Vector<font color="#1877f2">Crop</font></h3></a>
-                            </div>
-                            <nav class="s2-mobile-main-navigation  clearfix ul-li">
-                             <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#features">Features</a></li>
-                                <li><a href="#team">Team</a> </li>
-                                <li><a href="#pricing">Pricing</a></li>
-                                <li><a href="#conatct">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End of header section
-        ============================================= -->
+        var timeline1 = anime.timeline({ loop: true })
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 1250,
+                delay: (el, i) => 150 * (i + 1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 100000
+            });
 
-    <!-- Start of Banner section    
-        ============================================= -->
-     
-        <section id="home" class="saas_two_banner_section relative-position">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="s2-banner_area relative-position">
-                            <div class="s2-banner_content saas2-headline pera-content">
-                                <span class="s2-tilte_tag">inspire the next</span>
-                                <h1>Meet your  
-                                    future goals with <b><span class="text-gradient__indigo-red" style=" font-weight: 800;">VectorCrop</span></b>.
-                                </h1>
-                                <p>We will deliver you marketing and technology solutions in the best way.
+        var timeline2 = anime.timeline({ loop: true })
+            .add({
+                targets: '.ml4 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 10050,
+                delay: (el, i) => 150 * (i + 1) + 2000 // Adjust the delay to start after timeline1 completes
+            }).add({
+                targets: '.ml4',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 100000
+            });
 
-                                </p>
-                             
-                            </div>
-                            <div class="banner_mockup">
+        // Add a complete callback to timeline1
+        timeline1.complete = function () {
+            // Start timeline2 when timeline1 is complete
+            timeline2.play();
+        };
+    </script>
 
-<div id="w-node-e88ea24b-d518-0b8a-f480-1272223fca53-e2a8f4e0" class="max-width-xl content-left"><div class="browser-mockup outline"><div class="browser-top-bar underlined white"><div class="browser-top-bar-left"><img loading="lazy" src="https://assets.website-files.com/6239c2cd52949d0f76a8f421/6239c2ce52949df848a8f5a8_Lights.svg" alt=""></div></div><div class="browser-window"><div class="w-layout-grid code-list text-color-slate-600">
-    <div class="w-layout-grid code-row">
-        <div id="w-node-_78ff6320-6507-8a29-d023-d27462e02801-e2a8f4e0">1</div>
-        <div id="w-node-_78ff6320-6507-8a29-d023-d27462e02803-e2a8f4e0"><font color="pink">private static</font> <font color="#22d3ee">int</font> update(<font color="#22d3ee">Image</font>) {</div>
-        </div><br>
-        <div class="w-layout-grid code-row">
-            <div id="w-node-_78ff6320-6507-8a29-d023-d27462e02806-e2a8f4e0">2</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02808-e2a8f4e0"><font color="#22d3ee">int</font> <span class="text-color-red-400"> happiness;</span></div></div><br><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0280d-e2a8f4e0">3</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0280f-e2a8f4e0"><font color="#22d3ee">MyDesktop</font> desktop = &nbsp; &nbsp; &nbsp; <span class="text-color-red-400"></span><span class="text-color-red-400"></span><br></div></div><br><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02819-e2a8f4e0">4</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0281b-e2a8f4e0"><font color="pink">new</font> <font color="#22d3ee">MyDesktop</font></div></div>
-            <br><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0281e-e2a8f4e0">5</div><font color="white">desktop.apply(image);</font></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02821-e2a8f4e0"></div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02823-e2a8f4e0"><br></div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02827-e2a8f4e0">6</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02829-e2a8f4e0"> &nbsp;happiness = <span class="text-color-red-400">"INFINITY"</span><font color="white">;</font></div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0282e-e2a8f4e0"></div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02830-e2a8f4e0"></div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02833-e2a8f4e0">7</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02835-e2a8f4e0"><font color="pink">return </font>happiness; </div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02838-e2a8f4e0"></div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e0283a-e2a8f4e0"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="text-color-cyan-400"></span> </div></div><div class="w-layout-grid code-row"><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02863-e2a8f4e0">8</div><div id="w-node-_78ff6320-6507-8a29-d023-d27462e02865-e2a8f4e0">}</div></div></div></div></div></div>                            </div>
-                        </div>
-                    </div>
-                </div><br>
-            </div>
-            <!-- <div class="s2-banner_shape1 position-absolute" data-parallax='{"y" : 100}'><img src="assets/img/saas-c/banner/b-shape4.png" alt=""></div> -->
+</body>
 
-            <div class="s2-banner_shape2 position-absolute"><img src="assets/images/b-shape3.png" alt=""></div>
-            
-            <!-- <div class="s2-banner_shape3 position-absolute"><img src="assets/img/saas-c/banner/b-shape2.png" alt=""></div> -->
-        </section>
-    <!-- End of Banner section
-        ============================================= -->
-
-
-
-
-        <section id="about" class="smm-feature-section" style="background-color: #050e1a;">
-            <div class="container">
-                <div class="saas_two_section_title saas2-headline text-center"><br><br>
-                    <h2>Let's See What’s Inside<span>
-                    </span> </h2>
-                </div><br><br>
-                <div class="smm-feature-wrapper">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeFromUp;">
-                            <div class="smm-feature-innerbox">
-                                <div class="smm-feature-icon float-left">
-                                    <img src="assets/images/web.png" width="25%" style="margin-bottom: 13px" alt="">
-                                </div>
-                                <h3><a href="#">Website Development</a></h3>
-                                <div class="smm-feature-text smm-headline pera-content">
-                                    <p>
-                                        We’ll create a website to attract visitors, convert them into customers and encourage them to come back.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="250ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromUp;">
-                            <div class="smm-feature-innerbox">
-                                <div class="smm-feature-icon float-left">
-                                    <img src="assets/images/sm.png" width="25%" style="margin-bottom: 13px;" alt="">
-                                </div>
-                                <h3><a href="#">Social Media Advertisement</a></h3>
-                                <div class="smm-feature-text smm-headline pera-content">
-                                    <p>
-                                        We'll help you create a breakthrough product or highly improve your services.
-                                    </p><br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
-                            <div class="smm-feature-innerbox">
-                                <div class="smm-feature-icon float-left">
-                                    <img src="assets/images/pd.png" width="25%" style="margin-bottom: 13px;" alt="">
-                                </div>
-                                <h3><a href="#">Product/Contents Designing.</a></h3>
-                                <div class="smm-feature-text smm-headline pera-content">
-                                    <p>
-                                        We'll deliver To get advantages from content marketing you need to reaching an audience.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
-                            <div class="smm-feature-innerbox">
-                                <div class="smm-feature-icon float-left">
-                                    <img src="assets/images/android.png" width="25%" style="margin-bottom: 13px;" alt="">
-                                </div>
-                                <h3><a href="#">Application Development</a></h3>
-                                <div class="smm-feature-text smm-headline pera-content">
-                                    <p>
-                                        We’ll create a App to attract visitors, convert them into customers and encourage them to come back.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
-                            <div class="smm-feature-innerbox">
-                                <div class="smm-feature-icon float-left">
-                                    <img src="assets/images/ui.png" width="25%" style="margin-bottom: 13px;" alt="">
-                                </div>
-                                <h3><a href="#">UI/UX Designing</a></h3>
-                                <div class="smm-feature-text smm-headline pera-content">
-                                    <p>
-                                        VectorCrop is the right place for you to explore and learn more about the ui/ux design.
-                                    </p><br>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-4 col-md-6  wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
-                            <div class="smm-feature-innerbox">
-                                <div class="smm-feature-icon float-left">
-                                    <img src="assets/images/diaphragm.png" width="25%" style="margin-bottom: 13px;" alt="">
-                                </div>
-                                <h3><a href="#">Photography & Videography</a></h3>
-                                <div class="smm-feature-text smm-headline pera-content">
-                                    <p>
-                                        We'll deliver To get advantages from content marketing you need to reaching an audience.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                  </div></div></div><br>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-
-    <!-- Start of feature section   
-        ============================================= -->
-        <section id="features" class="saas_two_feature_section" style="background-color: white; color: black;">
-            <div class="container">
-                <div class="s2-feature_content">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 wow fadeFromUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="s2-feature_left">
-                                <div class="s2-feature_text saas2-headline pera-content">
-                                    <span class="feature_tag">Our awesome features </span>
-                                    <h2 style=" color: black;">Our features will help
-                                        to<span> improve business</span>
-                                    </h2>
-                                    <p style=" color: black;">Every modern problem has a modern solution. We are introducing our solutions for your business to became more powerful and essential. </p>
-
-                                    <div class="saas_btn">
-                                        <a href="#contact"><i class="fas fa-phone" ></i><font color="black">Meet us</font></a>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /feature left content -->
-                        <div class="col-lg-6 col-md-12">
-                            <div class="s2-feature_right">
-                                <div class="s2-feature_list s2-grean wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="s2-feature_icon text-center relative-position">
-                                        <i class="fab fa-codepen"></i>
-                                    </div>
-                                    <div class="s2-feature_text_box saas2-headline pera-content">
-                                        <h3>Software development</h3>
-                                        <p>Create stunning, effective Softwares with custom-designed and modules.</p>
-                                    </div>
-                                </div>
-                                <!-- list item -->
-                                <div class="s2-feature_list s2-purple wow fadeFromUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                    <div class="s2-feature_icon text-center relative-position">
-                                        <i class="fas fa-pen-square"></i>
-                                    </div>
-                                    <div class="s2-feature_text_box saas2-headline pera-content">
-                                        <h3>UI/UX design</h3>
-                                        <p>Create stunning, effective documents with custom-designed theme & template.</p>
-                                    </div>
-                                </div>
-                                <!-- list item -->
-                                <div class="s2-feature_list s2-pink wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                                    <div class="s2-feature_icon text-center relative-position">
-                                        <i class="fas fa-headphones"></i>
-                                    </div>
-                                    <div class="s2-feature_text_box saas2-headline pera-content">
-                                        <h3>Dedicated Support</h3>
-                                        <p>We are introducing 24x7 super support for our happy customers.</p>
-                                    </div>
-                                </div>
-                                <!-- list item -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <!-- End of feature section   
-        ============================================= -->
-
-
-
-        
-    <!-- Start of member section   
-        ============================================= -->
-        <section id="team" class="saas_two_team_section" style="background-color: #050e1a;">
-            <div class="container">
-                <div class="saas_two_section_title saas2-headline text-center">
-                    <span class="title_tag">Meet Our Devs</span>
-                    <h2>Our Team Developers.</h2>
-                </div>
-                <div id="s2_team_slide" class="s2-team_membar owl-carousel">
-                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="s2_tean_img">
-                            <img src="assets/images/msb.jpg" alt="">
-                        </div>
-                        <div class="s2_tean_text">
-                            <div class="s2_name_info saas2-headline">
-                                <h3>Mishab</h3>
-                                <span class="s2-designation">Full Stack Web Developer</span>
-                                <div class="s2_mem_contact">
-                                    <span><i class="fas fa-phone"></i> +91 9947 1546 91</span>
-                                    <span><i class="fas fa-envelope"></i> mishabmsb91@gmail.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="s2-mem_social ul-li-block">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
-                        </div> -->
-                    </div>
-<!--                     <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="s2_tean_img">
-                            <img src="assets/images/aju.jpg" alt="">
-                        </div>
-                        <div class="s2_tean_text">
-                            <div class="s2_name_info saas2-headline">
-                                <h3> Ajzal Bin Faisal</h3>
-                                <span class="s2-designation">Full Stack App Developer</span>
-                                <div class="s2_mem_contact">
-                                    <span><i class="fas fa-phone"></i> +91 80783 34505</span>
-                                    <span><i class="fas fa-envelope"></i> ajufaizy2222@gmail.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="s2-mem_social ul-li-block">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
-                        </div> -->
-                  
-                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="s2_tean_img">
-                            <img src="assets/images/shabeer.jpg" alt="">
-                        </div>
-                        <div class="s2_tean_text">
-                            <div class="s2_name_info saas2-headline">
-                                <h3>Muhammed Shabeer OP</h3>
-                                <span class="s2-designation">Designer &  Full Stack Flutter Developer</span>
-                                <div class="s2_mem_contact">
-                                    <span><i class="fas fa-phone"></i> +91 6238 261 610</span>
-                                    <span><i class="fas fa-envelope"></i> androlite4@gmail.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="s2-mem_social ul-li-block">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
-                        </div> -->
-                    </div>
-
-                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="s2_tean_img">
-                            <img src="assets/images/sahil.jpg" alt="">
-                        </div>
-                        <div class="s2_tean_text">
-                            <div class="s2_name_info saas2-headline">
-                                <h3>Sahil Hussain</h3>
-                                <span class="s2-designation">Full Stack Ruby Developer</span>
-                                <div class="s2_mem_contact">
-                                    <span><i class="fas fa-phone"></i> +91 94867 86436</span>
-                                    <span><i class="fas fa-envelope"></i> sahil.salem@gmail.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="s2-mem_social ul-li-block">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
-                        </div> -->
-                    </div>
-                    <div class="s2-team_img_text  relative-position wow fadeFromLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
-                        <div class="s2_tean_img">
-                            <img src="assets/images/alavi.jpg" alt="">
-                        </div>
-                        <div class="s2_tean_text">
-                            <div class="s2_name_info saas2-headline">
-                                <h3>Shabeer Alavi</h3>
-                                <span class="s2-designation">Full Stack Web Developer</span>
-                                <div class="s2_mem_contact">
-                                    <span><i class="fas fa-phone"></i> +91 799 446 5741</span>
-                                    <span><i class="fas fa-envelope"></i> shabeeralavi001@gmail.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="s2-mem_social ul-li-block">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                            <div class="s2-share_btn text-center"><i class="fas fa-share-alt"></i></div>
-                        </div> -->
-                    </div>
-                  
-                
-                    
-            
-                </div>
-            </div>
-        </section>
-    <!-- End  of member section   
-        ============================================= -->
-
-    <!-- Start of integration section   
-        ============================================= -->
-        <section id="integration" class="integration_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="integration_img">
-                            <img src="assets/images/img1.svg" alt=""><br>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 wow fadeFromRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="integration_text saas2-headline pera-content">
-                            <span class="feature_tag">Our Services </span>
-                            <h2>Why people's  <span>trust</span>
-                                VectorCrop
-                            </h2>
-                            <p>We will deliver you marketing and technology solutions in the best way.
-                            </p>
-                            <a href="#contact">Connect with us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <!-- End of integration section   
-        ============================================= -->
-
-
-   
-    <!-- Start of pricing section  
-        ============================================= -->
-        <section id="pricing" class="s2-pricing_section" style="background-color: white; color:black;">
-            <div class="container">
-                <div class="saas_two_section_title saas2-headline text-center">
-                    <span class="title_tag">
-                        Pricing 
-                    </span>
-                    <h2 style="color: black;"> Our best pricing  offer!</h2>
-                </div>
-                <!-- /section title -->
-                <div class="s2-pricing_content">
-                    <div class="row justify-content-md-center">
-                        <div class="col-lg-4 col-md-6 wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="s2-pricing_item">
-                                <div class="s2-pricing_price relative-position clearfix">
-                                    <div class="pricing_icon  float-left text-center">
-                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m509.472656 259.800781c1.632813-2.449219 2.527344-5.417969 2.527344-8.363281v-236.367188c.003906-8.199218-6.859375-15.070312-15.035156-15.070312h-235.902344c-6.914062 0-13.113281 4.949219-14.65625 11.703125l-69.167969 302.890625c-7.230469 6.433594-13.390625 8.175781-21.199219 10.378906-11.878906 3.347656-26.660156 7.515625-43.347656 27.667969-16.375 19.78125-18.917968 36.898437-21.160156 52.007813-1.980469 13.351562-3.546875 23.898437-14.558594 37.199218-10.640625 12.847656-18.375 14.925782-29.078125 17.800782-12.332031 3.316406-27.683593 7.4375-44.429687 27.667968-5.300782 6.402344-4.417969 15.902344 1.96875 21.214844 2.808594 2.332031 6.210937 3.46875 9.59375 3.46875 4.320312 0 8.605468-1.855469 11.578125-5.445312 10.640625-12.847657 18.371093-14.925782 29.074219-17.800782 12.335937-3.3125 27.6875-7.4375 44.433593-27.667968 16.375-19.777344 18.917969-36.898438 21.160157-52.003907 1.984374-13.355469 3.550781-23.902343 14.5625-37.203125 10.703124-12.929687 18.101562-15.015625 28.347656-17.902344 9.886718-2.789062 21.789062-6.15625 35.121094-18.824218l301.011718-69.023438c3.710938-.851562 7.046875-3.15625 9.15625-6.328125zm-239.816406-214.820312 88.097656 88.273437-140.382812 140.664063zm27.703125-14.847657h163.308594l-81.65625 81.816407zm81.65625 124.425782 88.097656 88.277344-228.476562 52.386718zm21.261719-21.304688 81.652344-81.816406v163.636719zm0 0" />
-                                        </svg>
-                                    </div>
-                                    <div class="s2-pricing_text">
-                                        <span>PERSONAL
-                                        </span>
-                                        <p><b>₹ 7,000/-</b></p>
-                                    </div>
-                                    <div class="s2-icon_bg">
-                                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m509.472656 259.800781c1.632813-2.449219 2.527344-5.417969 2.527344-8.363281v-236.367188c.003906-8.199218-6.859375-15.070312-15.035156-15.070312h-235.902344c-6.914062 0-13.113281 4.949219-14.65625 11.703125l-69.167969 302.890625c-7.230469 6.433594-13.390625 8.175781-21.199219 10.378906-11.878906 3.347656-26.660156 7.515625-43.347656 27.667969-16.375 19.78125-18.917968 36.898437-21.160156 52.007813-1.980469 13.351562-3.546875 23.898437-14.558594 37.199218-10.640625 12.847656-18.375 14.925782-29.078125 17.800782-12.332031 3.316406-27.683593 7.4375-44.429687 27.667968-5.300782 6.402344-4.417969 15.902344 1.96875 21.214844 2.808594 2.332031 6.210937 3.46875 9.59375 3.46875 4.320312 0 8.605468-1.855469 11.578125-5.445312 10.640625-12.847657 18.371093-14.925782 29.074219-17.800782 12.335937-3.3125 27.6875-7.4375 44.433593-27.667968 16.375-19.777344 18.917969-36.898438 21.160157-52.003907 1.984374-13.355469 3.550781-23.902343 14.5625-37.203125 10.703124-12.929687 18.101562-15.015625 28.347656-17.902344 9.886718-2.789062 21.789062-6.15625 35.121094-18.824218l301.011718-69.023438c3.710938-.851562 7.046875-3.15625 9.15625-6.328125zm-239.816406-214.820312 88.097656 88.273437-140.382812 140.664063zm27.703125-14.847657h163.308594l-81.65625 81.816407zm81.65625 124.425782 88.097656 88.277344-228.476562 52.386718zm21.261719-21.304688 81.652344-81.816406v163.636719zm0 0" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="s2-pricing_list ul-li-block">
-                                    <ul>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                            Web Designer
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-checked  float-left text-center"></div>
-                                            Web Development
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"></div>
-                                            UI/UX Designer
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
-                                            Graphic Designer
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
-                                            Seo Expert
-                                        </li>
-                                          <li>
-                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
-                                            Team Work
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="s2-pricing_btn">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"><i class="fas fa-cloud-download-alt" target="_blank"></i> Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <div class="col-lg-4 col-md-6 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="s2-pricing_item">
-                                <div class="s2-pricing_price relative-position clearfix">
-                                    <div class="pricing_icon  float-left text-center">
-                                      
-                                        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve"><g><g><path d="M511.996,60.921c0.168-16.341-6.104-31.703-17.659-43.259C482.933,6.257,467.822,0,451.719,0c-0.213,0-0.427,0.001-0.642,0.003c-16.341,0.168-31.571,6.755-42.885,18.545l-89.617,93.385L84.076,34.329l-69.253,69.253l195.97,120.664l-80.635,84.026l-63.288-10.39L0,364.75l109.054,38.197L147.25,512l66.87-66.87l-10.39-63.288l84.026-80.635L408.42,497.178l69.254-69.253L400.07,193.426l93.384-89.617C505.243,92.493,511.828,77.262,511.996,60.921z M472.661,82.142L365.608,184.876l77.739,234.907l-29.285,29.285L293.814,253.773L171.537,371.116l10.454,63.675l-22.193,22.193l-27.18-77.602l-77.602-27.18l22.193-22.193l63.675,10.454l117.343-122.276L62.933,97.94l29.285-29.285l234.907,77.739L429.859,39.341c5.679-5.919,13.326-9.225,21.529-9.31c0.107-0.002,0.215-0.002,0.321-0.002c8.083,0,15.67,3.141,21.396,8.867c5.802,5.801,8.949,13.513,8.865,21.716C481.885,68.815,478.579,76.461,472.661,82.142z"/></g></g></svg>
-                                    </div>
-
-                                    
-                                    <div class="s2-pricing_text">
-                                        <span>SMALL TEAM
-                                        </span>
-                                        <p><b>₹ 10,000/</b></p>
-
-                                    </div>
-                                    <div class="s2-icon_bg">
-                                        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve"><g><g><path d="M511.996,60.921c0.168-16.341-6.104-31.703-17.659-43.259C482.933,6.257,467.822,0,451.719,0c-0.213,0-0.427,0.001-0.642,0.003c-16.341,0.168-31.571,6.755-42.885,18.545l-89.617,93.385L84.076,34.329l-69.253,69.253l195.97,120.664l-80.635,84.026l-63.288-10.39L0,364.75l109.054,38.197L147.25,512l66.87-66.87l-10.39-63.288l84.026-80.635L408.42,497.178l69.254-69.253L400.07,193.426l93.384-89.617C505.243,92.493,511.828,77.262,511.996,60.921z M472.661,82.142L365.608,184.876l77.739,234.907l-29.285,29.285L293.814,253.773L171.537,371.116l10.454,63.675l-22.193,22.193l-27.18-77.602l-77.602-27.18l22.193-22.193l63.675,10.454l117.343-122.276L62.933,97.94l29.285-29.285l234.907,77.739L429.859,39.341c5.679-5.919,13.326-9.225,21.529-9.31c0.107-0.002,0.215-0.002,0.321-0.002c8.083,0,15.67,3.141,21.396,8.867c5.802,5.801,8.949,13.513,8.865,21.716C481.885,68.815,478.579,76.461,472.661,82.142z"/></g></g></svg>
-                                       
-                                    </div>
-                                </div>
-                                <div class="s2-pricing_list ul-li-block">
-                                    <ul>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                            Web Designer
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-checked  float-left text-center"></div>
-                                            Web Development
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                            UI/UX Designer
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                            Graphic Designer
-                                        </li>
-                                        <li>
-                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
-                                            Seo Expert
-                                        </li>
-                                          <li>
-                                            <div class="s2-pricing_list_icon s2-unchecked float-left text-center"><i class="fas fa-times"></i></div>
-                                            Team Work
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="s2-pricing_btn">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"><i class="fas fa-cloud-download-alt" target="__blank"></i> Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <div class="col-lg-4 col-md-6 wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="s2-pricing_item">
-                                <div class="s2-pricing_price relative-position clearfix">
-                                    <div class="pricing_icon  float-left text-center">
-                                     
-
-  <svg  enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m511.4 38.222c-1.109-20.338-17.284-36.511-37.622-37.621-41.038-2.242-121.342-.061-198.13 39.656-39.145 20.248-80.545 54.577-113.584 94.185-.407.488-.803.979-1.207 1.468l-74.98 5.792c-12.342.954-23.335 7.423-30.161 17.747l-51.154 77.372c-5.177 7.83-6 17.629-2.203 26.212 3.798 8.584 11.602 14.566 20.877 16.003l63.171 9.784c-.223 1.228-.447 2.455-.652 3.683-2.103 12.58 2.065 25.514 11.151 34.599l87.992 87.993c7.533 7.533 17.712 11.686 28.142 11.686 2.148 0 4.308-.177 6.458-.536 1.228-.205 2.455-.429 3.683-.652l9.784 63.172c1.437 9.275 7.419 17.08 16.001 20.877 3.571 1.58 7.35 2.36 11.112 2.36 5.283-.001 10.529-1.539 15.101-4.562l77.372-51.155c10.325-6.827 16.793-17.82 17.745-30.161l5.792-74.979c.489-.404.981-.8 1.469-1.207 39.609-33.039 73.939-74.439 94.186-113.585 39.719-76.791 41.896-157.096 39.657-198.131zm-175.394 393.037-74.011 48.933-9.536-61.565c31.28-9.197 62.223-23.927 91.702-43.66l-3.773 48.845c-.235 3.047-1.833 5.762-4.382 7.447zm-129.895-37.377-87.993-87.993c-2.245-2.246-3.283-5.401-2.774-8.44 2.616-15.643 6.681-30.534 11.713-44.562l132.028 132.028c-16.848 6.035-31.939 9.635-44.534 11.741-3.044.506-6.195-.529-8.44-2.774zm-117.923-222.269 48.844-3.773c-19.734 29.479-34.464 60.422-43.661 91.702l-61.564-9.535 48.934-74.012c1.686-2.55 4.401-4.147 7.447-4.382zm270.155 155.286c-24.233 20.213-47.756 34.833-69.438 45.412l-149.221-149.221c13.858-28.304 30.771-51.873 45.417-69.431 30.575-36.655 68.602-68.276 104.331-86.756 70.474-36.453 144.725-38.416 182.713-36.348 5.028.274 9.027 4.273 9.301 9.302 2.071 37.988.104 112.238-36.349 182.713-18.479 35.728-50.1 73.754-86.754 104.329z"/><path d="m350.721 236.243c19.202-.002 38.412-7.312 53.031-21.931 14.166-14.165 21.966-32.999 21.966-53.031s-7.801-38.866-21.966-53.031c-29.242-29.243-76.822-29.241-106.062 0-14.166 14.165-21.967 32.999-21.967 53.031s7.802 38.866 21.967 53.031c14.622 14.622 33.822 21.933 53.031 21.931zm-31.82-106.781c8.772-8.773 20.295-13.159 31.818-13.159 11.524 0 23.047 4.386 31.819 13.159 8.499 8.499 13.179 19.799 13.179 31.818s-4.68 23.32-13.179 31.819c-17.544 17.545-46.093 17.544-63.638 0-8.499-8.499-13.18-19.799-13.18-31.818s4.682-23.32 13.181-31.819z"/><path d="m15.301 421.938c3.839 0 7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0l-48.972 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.928 2.929 6.767 4.394 10.606 4.394z"/><path d="m119.761 392.239c-5.857-5.858-15.355-5.858-21.213 0l-94.154 94.155c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.767 4.393 10.606 4.393s7.678-1.464 10.606-4.394l94.154-94.154c5.859-5.858 5.859-15.355.001-21.213z"/><path d="m143.429 437.12-48.973 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.212 0z"/></svg>
-
-                                    </div>
-                                    <div class="s2-pricing_text">
-                                        <span>ENTERPRISE</span>
-                                        <p><b>₹ 14,000/-</b></p>
-
-                                    </div>
-                                    <div class="s2-icon_bg">
-                                      
- <svg  enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m511.4 38.222c-1.109-20.338-17.284-36.511-37.622-37.621-41.038-2.242-121.342-.061-198.13 39.656-39.145 20.248-80.545 54.577-113.584 94.185-.407.488-.803.979-1.207 1.468l-74.98 5.792c-12.342.954-23.335 7.423-30.161 17.747l-51.154 77.372c-5.177 7.83-6 17.629-2.203 26.212 3.798 8.584 11.602 14.566 20.877 16.003l63.171 9.784c-.223 1.228-.447 2.455-.652 3.683-2.103 12.58 2.065 25.514 11.151 34.599l87.992 87.993c7.533 7.533 17.712 11.686 28.142 11.686 2.148 0 4.308-.177 6.458-.536 1.228-.205 2.455-.429 3.683-.652l9.784 63.172c1.437 9.275 7.419 17.08 16.001 20.877 3.571 1.58 7.35 2.36 11.112 2.36 5.283-.001 10.529-1.539 15.101-4.562l77.372-51.155c10.325-6.827 16.793-17.82 17.745-30.161l5.792-74.979c.489-.404.981-.8 1.469-1.207 39.609-33.039 73.939-74.439 94.186-113.585 39.719-76.791 41.896-157.096 39.657-198.131zm-175.394 393.037-74.011 48.933-9.536-61.565c31.28-9.197 62.223-23.927 91.702-43.66l-3.773 48.845c-.235 3.047-1.833 5.762-4.382 7.447zm-129.895-37.377-87.993-87.993c-2.245-2.246-3.283-5.401-2.774-8.44 2.616-15.643 6.681-30.534 11.713-44.562l132.028 132.028c-16.848 6.035-31.939 9.635-44.534 11.741-3.044.506-6.195-.529-8.44-2.774zm-117.923-222.269 48.844-3.773c-19.734 29.479-34.464 60.422-43.661 91.702l-61.564-9.535 48.934-74.012c1.686-2.55 4.401-4.147 7.447-4.382zm270.155 155.286c-24.233 20.213-47.756 34.833-69.438 45.412l-149.221-149.221c13.858-28.304 30.771-51.873 45.417-69.431 30.575-36.655 68.602-68.276 104.331-86.756 70.474-36.453 144.725-38.416 182.713-36.348 5.028.274 9.027 4.273 9.301 9.302 2.071 37.988.104 112.238-36.349 182.713-18.479 35.728-50.1 73.754-86.754 104.329z"/><path d="m350.721 236.243c19.202-.002 38.412-7.312 53.031-21.931 14.166-14.165 21.966-32.999 21.966-53.031s-7.801-38.866-21.966-53.031c-29.242-29.243-76.822-29.241-106.062 0-14.166 14.165-21.967 32.999-21.967 53.031s7.802 38.866 21.967 53.031c14.622 14.622 33.822 21.933 53.031 21.931zm-31.82-106.781c8.772-8.773 20.295-13.159 31.818-13.159 11.524 0 23.047 4.386 31.819 13.159 8.499 8.499 13.179 19.799 13.179 31.818s-4.68 23.32-13.179 31.819c-17.544 17.545-46.093 17.544-63.638 0-8.499-8.499-13.18-19.799-13.18-31.818s4.682-23.32 13.181-31.819z"/><path d="m15.301 421.938c3.839 0 7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0l-48.972 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.928 2.929 6.767 4.394 10.606 4.394z"/><path d="m119.761 392.239c-5.857-5.858-15.355-5.858-21.213 0l-94.154 94.155c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.767 4.393 10.606 4.393s7.678-1.464 10.606-4.394l94.154-94.154c5.859-5.858 5.859-15.355.001-21.213z"/><path d="m143.429 437.12-48.973 48.973c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l48.973-48.973c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.212 0z"/></svg>
-
-
-
-                                   </div>
-                               </div>
-                               <div class="s2-pricing_list ul-li-block">
-                                <ul>
-                                    <li>
-                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                        Web Designer
-                                    </li>
-                                    <li>
-                                        <div class="s2-pricing_list_icon s2-checked  float-left text-center"></div>
-                                        Web Development
-                                    </li>
-                                    <li>
-                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                        UI/UX Designer
-                                    </li>
-                                    <li>
-                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                        Graphic Designer
-                                    </li>
-                                    <li>
-                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                        Seo Expert
-                                    </li>
-                                      <li>
-                                        <div class="s2-pricing_list_icon s2-checked float-left text-center"></div>
-                                        Team Work
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="s2-pricing_btn">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJrYjuspowPVYkUNrKqt5uc0PGPrnAQrKl5D-yGgMmHhj9og/viewform"><i class="fas fa-cloud-download-alt" target="__blank"></i> Book Now</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of pricing section   
-        ============================================= -->    
-
-    <!-- Start of footer section
-        ============================================= -->
-        <footer id="contact" class="saas_two_footer_section relative-position" style="background-color: black;">
-           <br>
-            <div  id="contact" class="footer_content pera-content" style="background-color: black;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="s2_footer_widget clearfix ul-li-block  saas2-headline">
-                                <div class="s2_footer_about">
-                                    <div class="s2-footer_logo">
-                                        <h2 class="" style="font-weight: 800; color: white;">Vector<font color="#1877f2">Crop</font></h2>                                
-                                        </div>
-                                    <div class="footer_about">
-                                        Calicut, Kerala
-                                        India
-                                    </div>
-                                    <span><i class="fas fa-phone"></i> Sahil : +91 94867 86436<br> <i class="fas fa-phone"></i> Mishab : +91 9947 1546 91 <br><br><br><i class="fas fa-envelope"></i> thevectorcrop@gmail.com</span>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                  
-                        <div class="col-lg-4 col-md-12">
-                            <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
-                                <div class="s2_footer_social">
-                                    <h3 class="s2_widget_title">
-                                        <span>Newsletter</span> 
-                                        <i></i>
-                                    </h3>
-                                    <p>Send us a newsletter to get update</p>
-                                    <form action="#">
-                                        <font color="white">
-                                        <input  name="email" type="email" placeholder="Enter your email address"></font>
-                                        <button  type="submit" value="Submit"> <i class="fas fa-paper-plane"></i></button>
-                                    </form>
-                                    <!-- <a href="#"><i class="fb-bg fab fa-facebook-f"></i></a> -->
-                                    <a href="https://github.com/vectorcrop"><i class="tw-bg fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/vector_crop/"><i class="bh-bg fab fa-instagram"></i></a>
-                                   
-                                    <a href="https://api.whatsapp.com/send/?phone=8078334505&text&app_absent=0"><i class="dr-bg fab fa-whatsapp"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="s2-copyright text-center">2022 © All rights reserved by <a href="https://www.Vectorcrop.com">  <font color="#1877f2">VectorCrop</font></a></div>
-    <!-- End of footer section 
-        ============================================= -->
-
-        <!-- JS library -->
-        <script>
-            function animateValue(obj, start, end, duration) {
-              let startTimestamp = null;
-              const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.innerHTML = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                  window.requestAnimationFrame(step);
-                }
-              };
-              window.requestAnimationFrame(step);
-            }
-        
-            const obj = document.getElementById("");
-            animateValue(obj, 0, 100, 3000);
-          </script>
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/owl.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/slick.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/pagenav.js"></script>
-        <script src="assets/js/jquery.barfiller.js"></script>
-        <script src="assets/js/parallax-scroll.js"></script>
-        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
-    </html>
-
-    12
+</html>
